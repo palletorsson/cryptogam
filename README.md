@@ -1,6 +1,6 @@
 # cryptogam
 
-The artistic research project Cryptogam aims to create artworks that fundamentally challenge the boundaries of their own technical system, thus aiming to reflect contemporary digital conditions while expanding the understanding of our common techno-social interfaces.
+The artistic research project Cryptogam aims to create artworks that challenge and investage the boundaries of their own technical system, thus aiming to reflect contemporary digital conditions while expanding the understanding of our common techno-social interfaces.
 
 The background of the research is the increasingly unstable relation between systems, algorithms and democracy that take place today. A development that needs to be understood to expand create and democratic possibilities. Through artwork and the research method, an expanding technical horizon is explored which determines how we understand out common socio-technical interfaces, as both creative and critical tools, social infrastructure and ideology.
 
