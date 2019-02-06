@@ -1,5 +1,14 @@
-﻿    // get pos here https://labs.sketchfab.com/experiments/screenshots/#model/74f6b21bb0fc4a31bf53cc947b94eb15
-    // http://jsoneditoronline.org/
+﻿// Imaginary connects ... 3D. 
+
+// get pos here https://labs.sketchfab.com/experiments/screenshots/#model/74f6b21bb0fc4a31bf53cc947b94eb15
+// http://jsoneditoronline.org/
+// https://gltf-viewer.donmccurdy.com/
+
+// Imaginary connects ... continue. 
+// before I started this tutorial I been researching the visual inside of 3d models what I use. 
+// models have different size and scales to figure what points in 3D space the the camera must connect I use a
+// for this example I am only using two pionts. 
+
     var pos2 = [{
             "position": [3, -112, 46],
             "target": [-1, 4, 33]
@@ -44,7 +53,7 @@
     ];
     var index = 0;
     // Model
-    //$("#api-frame").hide();
+
     var model = '56cce93abd8a485cbdc5bfff37a59f11',
 
         // Two buttons
@@ -72,7 +81,7 @@
         // If initilization succeeds, start the model immediately
         success = function(callback) {
             api = callback;
-            //$("#api-frame").fadeIn(5000);
+
             api.start();
             api.addEventListener(
                 'click',
@@ -81,12 +90,12 @@
                     if (info.position2D[0] < 100 && info.position2D[1] > 1000) {
                         api.setCameraLookAt(pos2[index].position, pos2[index].target, 10.0);
                         index++;
-                        console.log(index);
+
                     }
                     if (info.position2D[0] > 100 && info.position2D[1] > 1000) {
                         api.setCameraLookAt(pos2[index - 1].position, pos2[index - 1].target, 5.1);
                         index--;
-                        console.log(index);
+
                     }
 
                 }
