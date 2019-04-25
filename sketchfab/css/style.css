@@ -16,6 +16,14 @@ button {
     margin-right: 5px;
 }
 
-#start {
-    background: #1caad9;
+
+
+body {
+    background: black; 
 }
+
+
+* {
+    cursor: none;
+}
+
