@@ -6,8 +6,8 @@ First, the project takes a number of widely adapted technical platforms as a dep
 
 The feasibility study including three diffrent cases. 
 1. The Inner beauty of SketchFab 3D models 
-  1.2 text: https://tinyurl.com/yycby5pq
-  1.2 code: 
+** text: https://tinyurl.com/yycby5pq
+** code: 
   
 2.
 3.
