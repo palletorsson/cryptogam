@@ -10,10 +10,9 @@ The feasibility study including three diffrent cases.
    1. text: https://tinyurl.com/yycby5pq
    1. code: https://github.com/palletorsson/cryptogam/tree/master/sketchfab
 1. Amazing Animal Keyboard
-   1. text: https://tinyurl.com/yycby5pq
-   1. code:
+   1. text: https://tinyurl.com/y5qjy9j2
 1. Face Dection in Modern Art
-   1. text: https://tinyurl.com/yycby5pq
+   1. text: https://tinyurl.com/yyz6prqa
    1. code:
 
 
