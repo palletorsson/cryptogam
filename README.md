@@ -4,15 +4,15 @@ The 3-year artistic research project The Work of Art in the Age of Algorithmic R
 
 First, the project takes a number of widely adapted technical platforms as a departure and explore in different modes how they can be changed to present transformative and hidden possibilities. Second, a new format - the video performance tutorial - is explored as a format of presentation. Phase three, focuses on adapting the understanding of the often complex transformations of the artworks in the unique media lab at Konstfack. This phase will engage reference groups with discussions of specific questions of transparency, understanding and inclusion, norm criticism and reproducibility. Phase four, means reiteration of the works and format in public exhibitions, both nationally and internationally. The last phase, is dedicated to deepening and disseminating the arguments about the possibilities of the new format in publications.
 
-The feasibility study including three diffrent cases. 
+This feasibility study including three diffrent cases and a number of sketches. 
   
 1. The Inner beauty of SketchFab 3D models 
    1. text: https://tinyurl.com/yycby5pq
-   1. code: https://github.com/palletorsson/cryptogam/tree/master/sketchfab
-1. Amazing Animal Keyboard
+   2. code: https://github.com/palletorsson/cryptogam/tree/master/sketchfab
+2. Amazing Animal Keyboard
    1. text: https://tinyurl.com/y5qjy9j2
-1. Face Dection in Modern Art
+3. Face Dection in Modern Art
    1. text: https://tinyurl.com/yyz6prqa
-   1. code:
+   2. code:
 
 
