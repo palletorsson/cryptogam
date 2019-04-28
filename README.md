@@ -6,13 +6,14 @@ First, the project takes a number of widely adapted technical platforms as a dep
 
 This feasibility study including three diffrent cases and a number of sketches. 
   
-1. The Inner beauty of SketchFab 3D models 
+1. The Inner beauty of SketchFab 3D models (80% finshed)
    1. text: https://tinyurl.com/yycby5pq
    2. code: https://github.com/palletorsson/cryptogam/tree/master/sketchfab
-2. Amazing Animal Keyboard
+2. Amazing Animal Keyboard (60% finshed)
    1. text: https://tinyurl.com/y5qjy9j2
-3. Face Dection in Modern Art
+3. Face Dection in Modern Art (50% finshed)
    1. text: https://tinyurl.com/yyz6prqa
    2. code:
 
+The current project will be finalizaed as feasibility studies in Juni 2019
 
