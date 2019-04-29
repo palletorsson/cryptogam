@@ -11,9 +11,10 @@ This feasibility study including three diffrent cases and a number of sketches.
    2. code: https://github.com/palletorsson/cryptogam/tree/master/sketchfab
 2. Amazing Animal Keyboard (60% finshed)
    1. text: https://tinyurl.com/y5qjy9j2
+   2. code: 
 3. Face Dection in Modern Art (50% finshed)
    1. text: https://tinyurl.com/yyz6prqa
-   2. code:
+   2. code: https://github.com/palletorsson/cryptogam/tree/master/facesofmodernart
 
 The current project will be finalizaed as feasibility studies in Juni 2019
 
