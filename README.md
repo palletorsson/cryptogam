@@ -1,8 +1,8 @@
 # Cryptogam, a feasibility study for an artistic research project.
 
-Welcome to the feasibility study for the 3-year artistic research projectThe Work of Art in the Age of Algorithmic Reproduction.
+Welcome to the feasibility study for the 3-year artistic research project The Work of Art in the Age of Algorithmic Reproduction.
 
-The study including three diffrent cases and a number of sketches. 
+The study include three diffrent cases and a number of sketches. 
   
 1. The Inner beauty of SketchFab 3D models (80% finished)
    1. text: https://tinyurl.com/yycby5pq
@@ -14,7 +14,7 @@ The study including three diffrent cases and a number of sketches.
    1. text: https://tinyurl.com/yyz6prqa
    2. code: https://github.com/palletorsson/cryptogam/tree/master/facesofmodernart
 
-The current study will be finalized in Juni 2019 and is now at 60%.
+The current study will be finalized in July 2019 and is now at 60%.
 
 Abstract:
 
