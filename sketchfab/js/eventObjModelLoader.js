@@ -1,6 +1,6 @@
 ﻿// get pos here https://labs.sketchfab.com/experiments/screenshots/#model/74f6b21bb0fc4a31bf53cc947b94eb15
 // http://jsoneditoronline.org/
-var modelIndex = [  "marvelBlackWidowFanart", "namiFinalVersion", "proceduralHardSurfaceModelingTest","ladyKetsueki",
+var modelIndex = [  "marvelBlackWidowFanart", "newRetroGirl", "namiFinalVersion", "proceduralHardSurfaceModelingTest","ladyKetsueki",
  "warframeSarynVelenosa", "snowThingCommission",
        "japaneseGirl", "dreamwordSexygirlNvwang", "pikaGirl",  "discoveryInPink",  "maliakaZsketch",
                     "sciFiNinjaPbr",
@@ -16,11 +16,67 @@ var modelIndex = [  "marvelBlackWidowFanart", "namiFinalVersion", "proceduralHar
 // INSP: "nudeMan",  "starGuardian","latexKnight","fanartFeliciaDarkstalkers", "firy",
 // "bowsette", "annisaNude", "octaviaDivaTPose", "kimono", "alitaBattleAngel","candleman",   "magicalCharm", "discoveryInPink",
 // "songokuScan", "matteo", "blackCatWm","sciFiFemale",
+// sure 451b46b02bad47d4bd8914944db07313 customRenamonDigimon f9844b850e0f41caaaa5daf0931584d0
+// furryWizzardSkunkCommission ab7c55231ebb432c9c9c8cf9b385a36e demonLordFromClashOfWarlords 7160f7f458194b86b7283bf4f3bd2466
 
 var allModels = {
     "models": {
         "marvelBlackWidowFanart": {
             "id":  "1fcb308bdb314e26a0a3be3730c37049",
+            "events": [
+                    {
+                        "event": "fadein",
+                        "duration": "slow",
+                       "position": [1.7304186328826958,-0.5928301818565231,175.72813916943826],
+                       "target": [-6.1480170187,-1.9811612323,162.9029916944],
+
+                        "duration": 0.05
+                    },{
+                        "event": "fadein",
+                        "duration": "slow",
+                        "position": [1.7304186328826958,-0.5928301818565231,175.72813916943826],
+                       "target": [-6.1480170187,-1.9811612323,162.9029916944],
+                        "duration": 0.05
+                    },{
+                        "event": "fadein",
+                        "duration": "slow",
+                        "position": [-0.012705417823422493,0.3294573256084702,0.7786292803577796],
+                        "target": [-0.011399092066035604,0.2770537517416933,0.6942481328428061],
+                        "duration": 0.5
+                    },
+                    {
+                        "event": "load"
+                    }
+                ]
+        },"newRetroGirl": {
+            "id":  "bd2f7594b8434e3fa775e3fdaaeb2f2e",
+            "events": [
+                    {
+                        "event": "fadein",
+                        "duration": "slow",
+                       "position": [1.7304186328826958,-0.5928301818565231,175.72813916943826],
+                       "target": [-6.1480170187,-1.9811612323,162.9029916944],
+
+                        "duration": 0.05
+                    },{
+                        "event": "fadein",
+                        "duration": "slow",
+                        "position": [1.7304186328826958,-0.5928301818565231,175.72813916943826],
+                       "target": [-6.1480170187,-1.9811612323,162.9029916944],
+                        "duration": 0.05
+                    },{
+                        "event": "fadein",
+                        "duration": "slow",
+                        "position": [-0.012705417823422493,0.3294573256084702,0.7786292803577796],
+                        "target": [-0.011399092066035604,0.2770537517416933,0.6942481328428061],
+                        "duration": 0.5
+                    },
+                    {
+                        "event": "load"
+                    }
+                ]
+        },"demonicSiameseSoldier": {
+            "id":  "d1e7d119b0f94039b05c3967c50b8a5d",
             "events": [
                     {
                         "event": "fadein",
@@ -247,6 +303,8 @@ var allModels = {
 
          "dreamwordSexygirlNvwang": {
             "id":  "44d35669cf754bfc87151cffec31a934",
+            "creator": "woniumanmanpa",
+            "licence": "Creative Commons Attribution",
             "events": [
                     {
                         "event": "fadein",
@@ -430,6 +488,7 @@ var allModels = {
                   ]
           }, "ladyKetsueki": {
             "id":  "0c19b04dc3124b34a529a842273ee9ce",
+            "creator": "ravenousq",
             "events": [
                     {
                         "event": "fadein",
@@ -489,6 +548,7 @@ var allModels = {
         },
         "starGuardian": {
             "id":  "477c0c6b53f3449082f53dab161cce39",
+            "creator": "ellenbroberg",
             "events": [
                     {
                         "event": "fadein",
@@ -1228,6 +1288,8 @@ var allModels = {
                 ]
         },"swimming": {
             "id":  "ea1cbbad121141aa832ddea33b769145",
+            "creator": "Seleech",
+            "licence": "Creative Commons Attribution",
             "events": [
                     {
                         "event": "fadein",
@@ -1284,6 +1346,8 @@ var allModels = {
                 ]
         }, "gwenStacy": {
             "id":  "83c543eb10804a8b82827401012d61ba",
+            "creator": "Diox..Andrey",
+            "licence": "CC Attribution Creative Commons Attribution",
             "events": [
                     {
                         "event": "fadein",
@@ -1973,6 +2037,8 @@ var allModels = {
 
 "discoveryInPink": {
             "id":  "e2df196206e8419d8261ddea0763bad4",
+            "creator": "vermilionwlad",
+            "licence": "CC Attribution Creative Commons Attribution",
             "events": [
                     {
                         "event": "fadein",
@@ -3645,3 +3711,34 @@ setTimeout(function() {
 // vase-from-the-park-in-konopiste-chateau-5399495e7f1842ee9cd0987cc363854f
 
 // four-parts-of-the-world-fountain-77151988646547f084d4473a5a87b869 400 $ no used
+
+// CCCC
+// 1
+// miku-hatsune-race-tda-4a41d2cdbc23404885d8ebcc9c9bd6f1?cursor=cD0yMDQ%3D
+// nara-the-desert-dancer-free-download-b1a27cb7a04f4a96a895e3565095765f
+// pretty-ad6909a9024d47698c21c97a6da79471
+// japanese-girl-eab3570304464bd08f85d702b5dd8629
+// graciela-01c262c4e17b497aaa8408ec075ea0b8
+// maid-96cd7d84f16747b68e550e1da2a79e37
+// miku-8d605294e7494147ae5891b7ccaa5949
+// renoah-collintz-summer-71e6ddec071c4b40963a4e67fd2e5ead
+// paul-costa-nyra-game-character-96f558dea845400495e03e64d053b517
+// who-or-two-pt1-31fdf587f5bc45c2ad608ad6af655e2e
+// xayah-league-of-legends-fanart-286c6c7c74264dadb2872f4398491b3e
+// 225bb3e42a0a4ce684659141027c3fef
+// itami-90a2378e3481430c931baa0683915b06
+// jincho-9a49e336092d4e5aacc01aba739f601a
+// knight-final-6234171380f14c77b3d89efe973e9fab?cursor=cD05MA%3D%3D
+// seiki-86b6253e03ac453bb1440cca093aa0e0?cursor=bz05JnA9ODg%3D
+// arnau-3d-scan-5a0956782a284c16b013cbee21d3434f
+// manuela-83fd5aa590e24d53b425487ccf0dce1a?cursor=bz0zJnA9MTIx
+// mh07-cf7e6db618d64b9cb573df4409327e63
+// boba-fett-8ee61e679d2446e59ff48735e0df7b4a
+// gd52-mod2-saigebaker-59fefe29cf0a4c8682dc06696b2ca3a0?cursor=bz01JnA9ODU%3D
+// 1.5
+// unicorn-b0066694260c4307921ab911d7c29392
+// 2
+// original-anime-girls-1b7084a8d4e04620879610059d98951c
+// defender-lingerie-b40311d7291145d690130f440ed053fa
+//( manta-alfredi-v13-66e5f0b969764283a529936a9a6daedc)
+// momonga-ainz-ooal-gown-baaa545c02ff47aa937665a40cdf5e72
