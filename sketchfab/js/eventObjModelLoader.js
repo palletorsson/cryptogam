@@ -1167,6 +1167,8 @@ var allModels = {
                 ]
         }, "babyShark": {
             "id":  "3bb0416af18643288f8867056fdd7e2b",
+            "creator": "nataliedesign",
+            "licence": "Creative Commons Attribution",
             "events": [
                     {
                         "event": "fadein",
@@ -3283,8 +3285,10 @@ stopEvent = false,
 version = '1.4.0',
 // The iframe
 iframe = document.getElementById('api-frame'),
+iframe_2 = document.getElementById('api-frame_2'),
 // The API client object
 client = new Sketchfab(version, iframe),
+client_2 = new Sketchfab(version, iframe_2),
 modelIndexCount = 0,
 // The API object
 api,
@@ -3712,21 +3716,57 @@ setTimeout(function() {
 
 // four-parts-of-the-world-fountain-77151988646547f084d4473a5a87b869 400 $ no used
 
+// Price
+// hot-purple-hair-girl-in-high-heels-and-stockings-67cbf0896b75429aba76827297aeb906 18.95
+// dream-word--sexy-witch-c8472d31dfba41e6bb8060ea7f59fed3 10
+// female-scan-lily-kimono-costume-895bdbd9b4a14b6eaa017a9716783bf3 9.95
+// superman-ca772295fa7f4ef1a51b7af8872d2f61 10
+// robocop-4e29c6e962b24b57acd61b39f4b8ad3f 3.99 !!
+// beard-business-man-walking-23bd2a9171fa4297937901156202a133 19
+// basp-walk-cycle-842c0d26b5ae460ebe1f0b83cb7c47de 20
+// frieza-293ad83d91c74e78b71ad699d6dd8706 7 scan toy japan
+// azir-fanart-76ea312381494acd96082181ef22c772 18 mist inside
+// monarch-dc-212aa92497604c988d52c547e93ad786 3.99 following shadow
+// low-poly-dacian-warrior-584031cd0f3c43519fb6ee6f332cc1a1 3.99 mountain like inside
+// fantasy-low-poly-arabian-warrior-9d8959e979a64b25ab72f349690ff29d 3.99 also low poly mountain
+// stripper-girl-641691bc49e24ceaa80ed9db487bd2ff 4 light inside
 // CCCC
+// 0
+// cax-girll-2-bbeef807ac11482b881dfb628989f20b
 // 1
+// stargate-guards-baked-shadows-wip-a299e9b0a9e24c4cbef0d27e5d948273
 // miku-hatsune-race-tda-4a41d2cdbc23404885d8ebcc9c9bd6f1?cursor=cD0yMDQ%3D
+// rigged-lynx-model-18f95047351f41a482bb21505c21bba0
 // nara-the-desert-dancer-free-download-b1a27cb7a04f4a96a895e3565095765f
 // pretty-ad6909a9024d47698c21c97a6da79471
+// little-rebel-da92b56d22444957b21184ab7b1e1731
+// possessed-villager-60e39b9f42cc418887eea45157f24e42
+// maryianne-da0b6d4dafd04fadb2edf04ca6294326
+// brachy-the-pumpkin-toad-5ed8e33fab4449308fcb15edbe5b8c6b
+// jenny-wakeman-f39a2a6fa7324e09bedea12ad508099f mellan
+// 3d-scan-man-1-ad42febfaeb64aa0992e804acc9e7ccd mannen
+// jolyne-kujoh-custom-ddead0fc96334bb08037c6b41a43a68b dark
+// wife-68973416334941efb480afdb99a5db36
 // japanese-girl-eab3570304464bd08f85d702b5dd8629
 // graciela-01c262c4e17b497aaa8408ec075ea0b8
+// predator-s-3921d70ad5dd45d1861a1cdd9c49a228
+// crazy-woman-23fe9055701c4e74bd2df988d396b99d
+// lizard-creature-60c15b37b5c54c48903901df029310c1
 // maid-96cd7d84f16747b68e550e1da2a79e37
 // miku-8d605294e7494147ae5891b7ccaa5949
+// naga-5564cae923e8475e8548f22c1e8649d7
+// guns-and-poses-5e073817153845d88a198c603c723acd
+// luka-0be09d151cfe4db5a6812306e9234ff3
+// jayjays-model-vivziepop-dc57bcee36b749da9299aaaf8eb353c1
+// 3ds-max-ion-1f7efb6527e044a4912f0a9c62eaece4 abs
 // renoah-collintz-summer-71e6ddec071c4b40963a4e67fd2e5ead
 // paul-costa-nyra-game-character-96f558dea845400495e03e64d053b517
 // who-or-two-pt1-31fdf587f5bc45c2ad608ad6af655e2e
 // xayah-league-of-legends-fanart-286c6c7c74264dadb2872f4398491b3e
 // 225bb3e42a0a4ce684659141027c3fef
+// asachill-4f98ac2fd49b48bf985c7bb1ee78df1f litt
 // itami-90a2378e3481430c931baa0683915b06
+// gaspard-de-coligny-908bd2dfcc05422eaef3b2715fc5b4dd?cursor=cD00NSZvPTE5
 // jincho-9a49e336092d4e5aacc01aba739f601a
 // knight-final-6234171380f14c77b3d89efe973e9fab?cursor=cD05MA%3D%3D
 // seiki-86b6253e03ac453bb1440cca093aa0e0?cursor=bz05JnA9ODg%3D
@@ -3735,6 +3775,8 @@ setTimeout(function() {
 // mh07-cf7e6db618d64b9cb573df4409327e63
 // boba-fett-8ee61e679d2446e59ff48735e0df7b4a
 // gd52-mod2-saigebaker-59fefe29cf0a4c8682dc06696b2ca3a0?cursor=bz01JnA9ODU%3D
+// girl-just-married-6a834f67c1344b0eb0cba00cc107c5e1?cursor=bz0xNiZwPTUx
+// long-gone-1-53bbf3c8b6df41cd8b013a1a4dd21045?cursor=cD00OSZvPTEw
 // 1.5
 // unicorn-b0066694260c4307921ab911d7c29392
 // 2
