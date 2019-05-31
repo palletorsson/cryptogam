@@ -84,7 +84,7 @@ void backgroundLerp() {
     colorIndex = colorIndex + iter * puls;
     if (colorIndex > 255 || colorIndex < 160) {
       iter = iter * -1; 
-      puls = int(random(10));
+      puls = int(random(4));
       println(iter);
     }
     fill(colorIndex, mouseY);
@@ -96,11 +96,11 @@ void videoCam() {
         cam.read();
         PImage cp = cam.get();
         //image(cp, 0, (index*10% height), width, mouseY);
-        image(cp, 0, (index*30% height), width, mouseY);
-        image(cp, 0, (index*20% height), width, mouseY);
-        image(cp, 0, (index*40% height), width, mouseY);
+        image(cp, 0, (index*30% height+400)-400, width, mouseY);
+        image(cp, 0, (index*20% height+400)-400, width, mouseY);
+        image(cp, 0, (index*40% height+400)-400, width, mouseY);
         //fill(mouseY);
-        //rect(0, (index*200% height)+170, width, mouseX);
+        rect(0, (index*40% height+400)-400, width, mouseY, mouseX);
        
      }
     } else {
