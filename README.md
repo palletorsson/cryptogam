@@ -4,13 +4,13 @@ Welcome to the feasibility study for the 3-year artistic research project The Wo
 
 The study include three diffrent cases and a number of sketches. 
   
-1. The Inner beauty of SketchFab 3D models (70% finished)
+1. The Inner beauty of SketchFab 3D models (text 70%, code 80% finished)
    1. text: https://tinyurl.com/yycby5pq
    2. code: https://github.com/palletorsson/cryptogam/tree/master/sketchfab
-2. Amazing Animal Keyboard (60% finished)
+2. Amazing Animal Keyboard (text 60%, code 90% finished)
    1. text: https://tinyurl.com/y5qjy9j2
    2. code: https://github.com/palletorsson/cryptogam/tree/master/amazinganimalkeyboard
-3. Face Dection in Modern Art (50% finished)
+3. Face Dection in Modern Art (text 50%, code 90% finished)
    1. text: https://tinyurl.com/yyz6prqa
    2. code: https://github.com/palletorsson/cryptogam/tree/master/facesofmodernart
 
