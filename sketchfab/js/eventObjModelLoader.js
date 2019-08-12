@@ -138,6 +138,7 @@ function nextAnimation(currentEvent) {
         var direction = 1;
         api.getRootMatrixNode(function(err, nodeID) {
           if (!err) {
+              api.hide(nodeID);
                t = setInterval(function() {
                direction = direction + currentEvent.direction;
                api.translate(nodeID, [direction * 0.01, 0, 0, 1], {
