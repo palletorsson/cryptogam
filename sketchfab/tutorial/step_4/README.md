@@ -36,5 +36,5 @@ var cameraPositions = [
                 }
             );
 ```
-- Now we have a nice animation. 
+- Review the the animation. Nice!
 
