@@ -5,10 +5,7 @@
 
 ## Inital setup
 - In this first part of the tutorial we will only setup the initial code structure to be used. 
-- The code is a webpage and runs in a webbrowser 
-- To make a webpage we use a combination of html, css and javascript.
-
-- Lets start by making the html document with the necessary html.
+- The code is a webpage and runs in a webbrowser. To make a webpage we use a combination of html, css and javascript. Lets start by making the html document with the necessary html.
 - Paste the boilerplate code below into a code editor of your choice. 
 
 ```
