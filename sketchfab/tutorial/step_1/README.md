@@ -21,7 +21,7 @@
 
     <body>
         <!-- add iframe here -->
-        <!-- add local link to ./js/myscript.js -->
+        <!-- add link your code here -->
     </body>
 </html>
 ```
@@ -36,28 +36,31 @@
 ### Html structure
 - The boilerplate webpage has an autonomy consisting of html element and inside that element a head and a body.
 
-### Link files
+### Link the library code 
 - In the head we will link to the javascript library so we can use its 3D functions of sketchfab.com.
 - Go to https://sketchfab.com/developers/viewer and click on the link. 
     - "Insert this script in your page: sketchfab-viewer-1.5.1.js." 
     - You see a page of of compressed code. right click to save the page.
     - Save the page as "sketchfab-viewer.js" in the folder /sketchfab3d/js/
     - (you need to create a folder called "js" in your sketchfab3d folder)
-    - At the end of the body we will link to the javascript that will take care of the interaction.
+    - At the end of the body we will link to the library code.
     - under the instruction "add sketchfab library here" write: 
 ```
 <script type="text/javascript" src="./js/sketchfab-viewer.js"></script>
 ```
+### Link your script file
 - Create an empty file called "myscript.js" and save it in the js folder
-
 - Your folder structure should now look like this: 
 ```
 /sketchfab3d/index.html
 /sketchfab3d/js/myscript.js
 /sketchfab3d/js/sketchfab-viewer.js
 ```
-- Now we have link the library and our script in the webpage and the interative code.
-
+- under the instruction "add link your code her" write: 
+```
+<script type="text/javascript" src="./js/myscript.js"></script>
+```
+- now we have linked toghter the files that we need to start the project
 
 ### Add target iframe
-- in the body we will add an iframe, a webpage within a webpage, where the animations will play.
+- in the body we will finallt add an iframe (a webpage within a webpage) where the animations from the sketchfab models will play.
