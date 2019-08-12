@@ -12,22 +12,22 @@ var iframe = document.getElementById( 'api-frame' );
 ```
 - Go to Sketchfab.com and choose any model you would like to explore.
 - I will go with https://sketchfab.com/3d-models/candleman-c966755a1efe451b80925b19ed6a9318
-- Now we need the id of the model with is the last part in the web link.
+- From the web link we use the unique idenifier (uid) of the model.
 ```
 var uid = 'c966755a1efe451b80925b19ed6a9318';
 ```
-- create a sketchfab object:
+- create a sketchfab client API object: 
 ```
 var client = new Sketchfab( iframe );
 ```
-- and inti the client:
+- The is the way one can initilize the api functions with the model id
 ```
 client.init( uid, {
     success: function onSuccess( api ){
         api.start();
         api.addEventListener( 'viewerready', function() {
 
-            // API is ready to use
+            // the API is ready to use
             // Insert your code here
             console.log( 'Viewer is ready' );
 
@@ -38,3 +38,4 @@ client.init( uid, {
     }
 } );
 ```
+
