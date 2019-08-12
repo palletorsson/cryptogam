@@ -4,7 +4,7 @@
 - The sketchfab viewer api are used for the exploration: https://sketchfab.com/developers/viewer 
 
 ## Inital setup
-- In this first part of the tutorial we will only setup the initial code structure. 
+- In this first part of the tutorial we will only setup the initial code structure to be used. 
 - The code is a webpage and runs in a webbrowser 
 - To make a webpage we use a combination of html, css and javascript.
 
@@ -15,6 +15,8 @@
 <!DOCTYPE HTML>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <title> Sketchfab - Radical Inside </title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- add sketchfab library here -->
     </head>
@@ -37,7 +39,7 @@
 - The boilerplate webpage has an autonomy consisting of html element and inside that element a head and a body.
 
 ### Link the library code 
-- In the head we will link to the javascript library so we can use its 3D functions of sketchfab.com.
+- In the head we will link to the sketchfab library so we can use its 3D functions of sketchfab.com.
 - Go to https://sketchfab.com/developers/viewer and click on the link. 
     - "Insert this script in your page: sketchfab-viewer-1.5.1.js." 
     - You see a page of of compressed code. right click to save the page.
@@ -48,19 +50,26 @@
 ```
 <script type="text/javascript" src="./js/sketchfab-viewer.js"></script>
 ```
+
 ### Link your script file
-- Create an empty file called "myscript.js" and save it in the js folder
+- Create an empty file called "myScript.js" and save it in the js folder
 - Your folder structure should now look like this: 
 ```
 /sketchfab3d/index.html
-/sketchfab3d/js/myscript.js
+/sketchfab3d/js/myScript.js
 /sketchfab3d/js/sketchfab-viewer.js
 ```
-- under the instruction "add link your code her" write: 
+- under the instruction "add link your code here" write: 
 ```
 <script type="text/javascript" src="./js/myscript.js"></script>
 ```
-- now we have linked toghter the files that we need to start the project
+- Now we linked together the files that we need to start the project
 
 ### Add target iframe
-- in the body we will finallt add an iframe (a webpage within a webpage) where the animations from the sketchfab models will play.
+- In the body we will finally add an iframe (a webpage within a webpage) where the animations from the sketchfab models will play.
+- under the instruction "add iframe here" write: 
+```
+  <iframe src="" id="api-frame" class="api-frame" allow="autoplay; fullscreen; vr"
+            allowvr allowfullscreen mozallowfullscreen="true"
+            webkitallowfullscreen="true" width="100%" height="800px"></iframe>
+```
