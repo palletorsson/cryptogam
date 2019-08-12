@@ -70,3 +70,5 @@
             allowvr allowfullscreen mozallowfullscreen="true"
             webkitallowfullscreen="true" width="100%" height="800px"></iframe>
 ```
+### Edges of an empty window
+- If you open on the index.html file i a web browser you should see an the edges of an empty window. 
