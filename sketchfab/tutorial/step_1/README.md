@@ -39,12 +39,16 @@
 ### Link files
 - In the head we will link to the javascript library so we can use its 3D functions of sketchfab.com.
 - Go to https://sketchfab.com/developers/viewer and click on the link. 
- - "Insert this script in your page: sketchfab-viewer-1.5.1.js." 
-- You see a page of of compressed code. right click to save the page.
-- Save the page as "sketchfab-viewer.js" in the folder /sketchfab3d/js/
-- (you need to create a folder called "js" in your sketchfab3d folder)
-- At the end of the body we will link to the javascript that will take care of the interaction.
-- create an empty file called "myscript.js" and save it in the js folder
+    - "Insert this script in your page: sketchfab-viewer-1.5.1.js." 
+    - You see a page of of compressed code. right click to save the page.
+    - Save the page as "sketchfab-viewer.js" in the folder /sketchfab3d/js/
+    - (you need to create a folder called "js" in your sketchfab3d folder)
+    - At the end of the body we will link to the javascript that will take care of the interaction.
+    - under the instruction "add sketchfab library here" write: 
+```
+<script type="text/javascript" src="./js/sketchfab-viewer.js"></script>
+```
+- Create an empty file called "myscript.js" and save it in the js folder
 
 - Your folder structure should now look like this: 
 ```
