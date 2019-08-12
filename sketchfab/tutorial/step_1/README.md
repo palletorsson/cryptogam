@@ -2,7 +2,7 @@
 
 - This tutorial explores how to make animation inside the 3d-models of the website sketchfab.com.
 
-- The sketchfab viewer api are used for the exploration.  
+- The sketchfab viewer api are used for the exploration: https://sketchfab.com/developers/viewer 
 
 ## Inital setup
 - The code is a webpage and runs in a webbrowser 
@@ -14,29 +14,25 @@
 ```
 <!DOCTYPE HTML>
 <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- add sketchfab library here -->
+    </head>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- add sketchfab library here -->
-</head>
-
-<body>
-
-</body>
+    <body>
+        <!-- add iframe here -->
+        <!-- add local link to ./js/myscript.js -->
+    </body>
 </html>
 ```
 
 
 ### Html structure
-- The boilerplate webpage has an autonomy consisting of html element (<html>) and inside that element a head (<head>) and a body (<body>).
-
-- in the head we will link to the javascript library so we can use its 3D functions.
-
+- The boilerplate webpage has an autonomy consisting of html element and inside that element a head and a body.
+- In the head we will link to the javascript library so we can use its 3D functions of sketchfab.com.
+-- Insert this script in your page: sketchfab-viewer-1.5.1.js
 - in the body we will add an iframe, a webpage within a webpage, where the animations will play.
-
 - lastly at the end of the body we will link to the javascript that will take care of the interaction.
-
-
-// now we have link the libery with the webpage and the interative code.
-// save the document och open up a new document
+- now we have link the library with the webpage and the interative code.
+- save the document och open up a new document
 
