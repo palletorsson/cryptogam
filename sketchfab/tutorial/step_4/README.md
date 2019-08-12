@@ -21,20 +21,21 @@ var cameraPositions = [
           "target": [-6.295946179228759,2.5339818999264883,15.220566998191604],
       }]
 ```
-- Now use the setCameraLookAt() for each position. 
+- Now make a function iterating the setCameraLookAt() for each position. 
 ```
-  api.addEventListener(
-                'click',
-                function(info) {
-                  // get the camera position by clicking on the far left of screen
-                  if (info.position2D[0] < 100) {
-                    promtCameraPosition(api);
-                  } else {
-                    api.setCameraLookAt(cameraPositions[posIndex].position, cameraPositions[posIndex].target, 3);
-                    posIndex++; 
-                  }
-                }
-            );
+function setCamera(api) {
+  api.setCameraLookAt(cameraPositions[posIndex].position, cameraPositions[posIndex].target, 3);
+  posIndex++; 
+}
 ```
+- Add it to the click loop like so: 
+```
+if (info.position2D[0] < 100) {
+  promtCameraPosition(api);
+} else {
+  setCamera(api);
+}
+```
+
 - Review the the animation. Nice!
 
