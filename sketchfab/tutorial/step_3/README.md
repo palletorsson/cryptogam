@@ -15,7 +15,7 @@ function promtCameraPosition(api) {
   });
 }
 ```
-- we can now trigger this function on click by adding a click addEventListener inside the 'viewerready' function. We also want to limit and control the click position. 
+- We can now trigger this function on click by adding a click addEventListener inside the 'viewerready' function. We also want to limit the click trigger range. 
 ```
 api.addEventListener(
     'click',
@@ -27,7 +27,7 @@ api.addEventListener(
     }
 );
 ```
-- Let's recode a number of position.
+- Let's recode a number of position by clicking on the far left of screen.
 ```
 "position": [0.17116218147772588,-0.5164971178787727,86.78621693231594],
 "target": [-0.17600697144648275,-1.1942467879311174,74.6853367314544],
