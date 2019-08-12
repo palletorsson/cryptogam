@@ -15,4 +15,14 @@ function promtCameraPosition(api) {
   });
 }
 ```
-- we can now use this function 
+- we can now trigger this function on click by adding a click addEventListener inside the 'viewerready' function. We also want to limit and control the click position. 
+```
+api.addEventListener(
+    'click',
+    function(info) {
+      // get the camera position by clicking on the far left of screen
+      if (info.position2D[0] < 100) {
+        promtCameraPosition(api);
+      }
+    }
+);
