@@ -6,21 +6,9 @@ client.init( uid, {
         api.start();
         api.addEventListener( 'viewerready', function() {
 
-          api.addEventListener(
-              'click',
-              function(info) {
-
-                api.getCameraLookAt(function(err, camera) {
-                  var pos_log = '"position": ['+ camera.position +'],' + "\n";
-                  var pos_log = pos_log + '"target": ['+ camera.target + '],'
-                  prompt("Copy to clipboard: Ctrl+C, Enter", pos_log);
-                });
-
-
-
-              }
-          );
-
+            // API is ready to use
+            // Insert your code here
+            console.log( 'Viewer is ready' );
 
         } );
     },
