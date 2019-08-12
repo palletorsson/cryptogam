@@ -25,7 +25,8 @@
 </html>
 ```
 
-- Save the file "index.html" in a folder called sketchfab3d
+- Save the file "index.html" in a folder called sketchfab3d. 
+- Your folder structure should now look like this 
 
 ```
 /sketchfab3d/index.html
@@ -37,17 +38,19 @@
 ### Link files
 - In the head we will link to the javascript library so we can use its 3D functions of sketchfab.com.
 - Go to https://sketchfab.com/developers/viewer and click on the link, 
-- - "Insert this script in your page: sketchfab-viewer-1.5.1.js." 
-- you see a page of of compressed code. right click to save.
+ - "Insert this script in your page: sketchfab-viewer-1.5.1.js." 
+- You see a page of of compressed code. right click to save the page.
 - Save the code with the file name "sketchfab-viewer.js" in the folder /sketchfab3d/js/
+- (you need to create a folder called "js" in your sketchfab3d folder)
 
-```
-/sketchfab3d/js/myscript.js
-```
 
 - at the end of the body we will link to the javascript that will take care of the interaction.
 - create an empty file called "myscript.js" and save it
+
+- Your folder structure should now look like this: 
 ```
+/sketchfab3d/index.html
+/sketchfab3d/js/myscript.js
 /sketchfab3d/js/sketchfab-viewer.js
 ```
 - now we have link the library with the webpage and the interative code.
