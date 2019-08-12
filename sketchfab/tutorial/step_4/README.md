@@ -3,7 +3,7 @@
 - This tutorial explores how to make animations inside the 3d-models of the website sketchfab.com.
 - The sketchfab viewer api are used for the exploration: https://sketchfab.com/developers/viewer
 
-##  Play back the camera postion 
+##  Playback the camera postion 
 -  By using the api function [setCameraLookAt](https://sketchfab.com/developers/viewer/functions#api-setCameraLookAt) we can set a camera postion. If we have a list of camera positions we can now trigger an animation.  
 - make a list of the postions
 ```
