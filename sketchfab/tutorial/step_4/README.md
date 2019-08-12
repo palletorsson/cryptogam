@@ -4,8 +4,8 @@
 - The sketchfab viewer api are used for the exploration: https://sketchfab.com/developers/viewer
 
 ##  Playback the camera position 
--  By using the api function [setCameraLookAt](https://sketchfab.com/developers/viewer/functions#api-setCameraLookAt) we can set a camera postion. If we have a list of camera positions we can now trigger an animation.  
-- make a list of the postions
+-  By using the api function [setCameraLookAt](https://sketchfab.com/developers/viewer/functions#api-setCameraLookAt) we can set a camera position. If we have a list of camera positions we can now trigger an animation.  
+- make a list of the positions
 ```
 var cameraPositions = [
       {
@@ -36,7 +36,7 @@ if (info.position2D[0] < 100) {
   setCamera(api);
 }
 ```
-- as well as position index at the top of the document. 
+- as well as pposition index at the top of the document. 
 ```
 var posIndex = 0;
 ```
