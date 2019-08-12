@@ -1,4 +1,4 @@
 # Radical Inside : Tutorial part 1
 
 - This tutorials explores how to make animations inside the 3d-models of the website sketchfab.com in 4 parts.
-- step 1: 
+- Step 1: https://github.com/palletorsson/cryptogam/tree/master/sketchfab/tutorial/step_1
