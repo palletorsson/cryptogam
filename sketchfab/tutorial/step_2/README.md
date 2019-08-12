@@ -20,7 +20,7 @@ var uid = 'c966755a1efe451b80925b19ed6a9318';
 ```
 var client = new Sketchfab( iframe );
 ```
-- The is the way one can initilize the api functions with the model id
+- The is the way one can initilize the api functions with the model uid
 ```
 client.init( uid, {
     success: function onSuccess( api ){
