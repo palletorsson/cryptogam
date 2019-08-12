@@ -25,9 +25,9 @@ api.addEventListener(
         promtCameraPosition(api);
       }
     }
-);-
-Lets recode a number of postion. 
+);
 ```
+- Lets recode a number of postion. 
 ```
 "position": [0.17116218147772588,-0.5164971178787727,86.78621693231594],
 "target": [-0.17600697144648275,-1.1942467879311174,74.6853367314544],
