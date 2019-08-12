@@ -1,13 +1,12 @@
-<!--
+*Radical Inside : Tutorial 1 
 
-1. Imaginary connects ... Introduction
+This tutorial explores how to make animation inside the 3d-models of the website sketchfab.com.
 
-* How to make a use of the 3D plattform Sketchfab
-* to connect the imaginary relation between bodies, our own and
-* what Donna Haraway world call kin, becoming other, order.
+The sketchfab viewer api are used for the exploration.  
 
-2. The 3d plattform sketchfab can works in your browser, a browser that reads webpages.
-* To make a webpage we use a combination of html and javascript.
+Inital setup
+The code is a webpage and run in a webbrowser 
+To make a webpage we use a combination of html, css and javascript.
 
 3. Let start with the necessary html.
 * Paste som boilerplate code into this document
