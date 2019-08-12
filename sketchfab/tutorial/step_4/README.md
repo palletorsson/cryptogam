@@ -36,6 +36,9 @@ if (info.position2D[0] < 100) {
   setCamera(api);
 }
 ```
-
+- as well as position index at the top of the document. 
+```
+var posIndex = 0;
+```
 - Review the the animation. Nice!
 
