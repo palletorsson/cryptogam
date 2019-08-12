@@ -1,4 +1,4 @@
-# Radical Inside : Tutorial 1 
+# Radical Inside : Tutorial part 1 
 
 - This tutorial explores how to make animation inside the 3d-models of the website sketchfab.com.
 
