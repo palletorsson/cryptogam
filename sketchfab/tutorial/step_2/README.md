@@ -20,7 +20,8 @@ var uid = 'c966755a1efe451b80925b19ed6a9318';
 ```
 var client = new Sketchfab( iframe );
 ```
-
+- and inti the client:
+```
 client.init( uid, {
     success: function onSuccess( api ){
         api.start();
@@ -36,3 +37,4 @@ client.init( uid, {
         console.log( 'Viewer error' );
     }
 } );
+```
