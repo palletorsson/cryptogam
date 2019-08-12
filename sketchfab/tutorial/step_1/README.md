@@ -1,15 +1,14 @@
 # Radical Inside : Tutorial part 1 
 
-- This tutorial explores how to make animation inside the 3d-models of the website sketchfab.com.
-
+- This tutorial explores how to make animations inside the 3d-models of the website sketchfab.com.
 - The sketchfab viewer api are used for the exploration: https://sketchfab.com/developers/viewer 
 
 ## Inital setup
 - The code is a webpage and runs in a webbrowser 
 - To make a webpage we use a combination of html, css and javascript.
 
-- Lets start by making the html document, with the necessary html.
-- Paste the boilerplate code below into a code editor of your choose. 
+- Lets start by making the html document with the necessary html.
+- Paste the boilerplate code below into a code editor of your choice. 
 
 ```
 <!DOCTYPE HTML>
@@ -26,7 +25,7 @@
 </html>
 ```
 
-- Save the file index.html in a folder called sketchfab3d
+- Save the file "index.html" in a folder called sketchfab3d
 
 ```
 /sketchfab3d/index.html
@@ -37,16 +36,17 @@
 
 ### Link files
 - In the head we will link to the javascript library so we can use its 3D functions of sketchfab.com.
-- Go to https://sketchfab.com/developers/viewer and click on the link, Insert this script in your page: sketchfab-viewer-1.5.1.js. 
+- Go to https://sketchfab.com/developers/viewer and click on the link, 
+- - "Insert this script in your page: sketchfab-viewer-1.5.1.js." 
 - you see a page of of compressed code. right click to save.
-- Save the code with the file name sketchfab-viewer.js in the folder /sketchfab3d/js/
+- Save the code with the file name "sketchfab-viewer.js" in the folder /sketchfab3d/js/
 
 ```
 /sketchfab3d/js/myscript.js
 ```
 
 - at the end of the body we will link to the javascript that will take care of the interaction.
-- create an empty file myscript.js and save it
+- create an empty file called "myscript.js" and save it
 ```
 /sketchfab3d/js/sketchfab-viewer.js
 ```
