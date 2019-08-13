@@ -24,7 +24,7 @@ var themodel = {
       }]
       }
 ```
-- Let's wrapp the init function in a load function so we can load models dynamically. 
+- Wrapp the init function in a load function so we can load models dynamically. 
 ```
 function loadModel( client, urlid ) {
             console.log( 'loading a model' );
@@ -33,7 +33,7 @@ function loadModel( client, urlid ) {
             });
         }
 ```
-- The new success function look like this:  
+- Restructure the success function look like this.  
 ```
 function success( callback ) {
       api = callback;
