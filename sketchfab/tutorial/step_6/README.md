@@ -47,9 +47,42 @@ var models = {
 ```
 /sketchfab3d/js/modeldata.js
 ```
-- now link the file before the myscript.js line in the index.html document. 
+- Now link the file before the myscript.js line in the index.html document. 
 ```
 <script type="text/javascript" src="./js/modeldata.js"></script>
 <script type="text/javascript" src="./js/myscript.js"></script>
 ```
-- Ok, 
+- Ok, we also need a modelsnames list to keep track of the models, at the top of your modeldata file add. 
+```
+var modelNames = ["Candleman", "Candleman2"];
+```
+- Save the files. 
+- Go back to myscript.js and add indexes and variables for keeping count of the models and events. 
+- Near the top of the script write: 
+```
+var modelIndexCount = 0;
+var currentEventList = ''
+var currentModel = ''; 
+```
+- Now make a function that changes model. 
+```
+function setNextModelEvents() {
+  var currentModelname = modelNames[modelIndexCount];
+  currentModel = models.models[currentModelname];
+  currentEventList = currentModel.events;
+  if (modelIndexCount < models.models.length-1) {
+    modelIndexCount++;
+  }
+}
+```
+In the click function we need to keep track of if the list of event is at the end and the load a new model. 
+```
+if (posIndex == currentEventList.length) {
+    setNextModelEvents();
+    posIndex = 0;
+    var uid = currentModel.uid;
+    loadModel( client, uid );
+  } else {
+    setCamera(api);
+  }
+```
