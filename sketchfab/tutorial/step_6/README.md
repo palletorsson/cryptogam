@@ -105,7 +105,7 @@ if (isClicking == false) {
 ```
 var isLoading = false;
 ```
-- Also when the in the beginning of the success fuction we new to reset the loading flag. 
+- Also when the in the beginning of the success fuction we new to reset the loading flag and event position index. 
 ```
 api.start();
 isClicking = false;
