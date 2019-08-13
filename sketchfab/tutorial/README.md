@@ -6,4 +6,6 @@
 - Step 3: [Recode camera position](https://github.com/palletorsson/cryptogam/tree/master/sketchfab/tutorial/step_3)
 - Step 4: [Playback the camera position](https://github.com/palletorsson/cryptogam/tree/master/sketchfab/tutorial/step_4)
 - Step 5: [Dynamically load a 3d model](https://github.com/palletorsson/cryptogam/tree/master/sketchfab/tutorial/step_5)
+- Step 6: [Load and keep track more then one model](https://github.com/palletorsson/cryptogam/tree/master/sketchfab/tutorial/step_6)
+
 

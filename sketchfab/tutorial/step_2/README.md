@@ -4,9 +4,9 @@
 - The sketchfab viewer api are used for the exploration: https://sketchfab.com/developers/viewer
 
 ##  Load a sketchfab 3D model
-- Lets load a model we can use for exploration.
+- Let's load a model we can use for exploration.
 - Open myScript.js in the js folder.
-- Add to a reference to the iframe in the html document.
+- Add a reference to the iframe in the html document.
 ```
 var iframe = document.getElementById( 'api-frame' );
 ```

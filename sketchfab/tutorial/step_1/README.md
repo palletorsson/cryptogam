@@ -20,7 +20,7 @@
 
     <body>
         <!-- add iframe here -->
-        <!-- add link your code here -->
+        <!-- add the link to your code here -->
     </body>
 </html>
 ```
@@ -56,7 +56,7 @@
 /sketchfab3d/js/myScript.js
 /sketchfab3d/js/sketchfab-viewer.js
 ```
-- under the instruction "add link your code here" write: 
+- under the instruction "add the link to your code here" write: 
 ```
 <script type="text/javascript" src="./js/myscript.js"></script>
 ```
