@@ -77,27 +77,38 @@ function setNextModelEvents() {
 }
 ```
 -  In the click function we need to keep track of when the event list for each models ends and then load a new model. 
+- We also need logic and a variable called isClicking to stop the api from registering multiple clicks.
 ```
-if (posIndex == currentEventList.length) {
-    if (isLoading == false) {
-      setNextModelEvents();
-      posIndex = 0;
-      var uid = currentModel.uid;
-      loadModel( client, uid );
-      api.stop();
-    }
-    isLoading = true;
-  } else {
-    setCamera(api);
+if (isClicking == false) {
+      // get the camera position by clicking on the far left of screen
+      if (info.position2D[0] < 100) {
+        promtCameraPosition(api);
+      } else {
+        console.log(posIndex, currentEventList.length);
+        if (posIndex == currentEventList.length) {
+            setNextModelEvents();
+            var uid = currentModel.uid;
+            loadModel( client, uid );
+            api.stop();
+        } else {
+          setCamera(api);
+        }
+      }
+    } // end of false clicking
+    isClicking = true;
+    setTimeout(function(){
+      isClicking = false;
+    }, 1000);
   }
 ```
-- We need a variable called isLoading at the top so that the api only load once. 
+- Add the variable at the top of the script. 
 ```
 var isLoading = false;
 ```
 - Also when the in the beginning of the success fuction we new to reset the loading flag. 
 ```
 api.start();
-isLoading = false;
+isClicking = false;
+posIndex = 0;
 ```
 - Nice, you should be able to load your models dynamically.
