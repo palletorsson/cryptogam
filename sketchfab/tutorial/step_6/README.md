@@ -91,8 +91,13 @@ if (posIndex == currentEventList.length) {
     setCamera(api);
   }
 ```
-- We need a variable called isLoading at the top so that the api olny load once. 
+- We need a variable called isLoading at the top so that the api only load once. 
 ```
 var isLoading = false;
+```
+- Also when the in the beginning of the success fuction we new to reset the loading flag. 
+```
+api.start();
+isLoading = false;
 ```
 - Nice, you should be able to load your models dynamically.
