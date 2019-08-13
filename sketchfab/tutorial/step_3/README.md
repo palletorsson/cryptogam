@@ -27,7 +27,7 @@ api.addEventListener(
     }
 );
 ```
-- Now navigate inside the model and recode a number of diffrent positions by clicking on the far left of screen.
+- Now navigate inside the model and recode a number of diffrent positions by clicking on the far left of screen. Past each sample in to a temporary file. 
 ```
 "position": [0.17116218147772588,-0.5164971178787727,86.78621693231594],
 "target": [-0.17600697144648275,-1.1942467879311174,74.6853367314544],
