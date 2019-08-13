@@ -26,7 +26,7 @@ var models = {
           }
         },
         "nudeMan": {
-            "id":  "5ecaebeeb2264ebaa08bc0addeff18c8",
+            "uid":  "5ecaebeeb2264ebaa08bc0addeff18c8",
             "events": [
               {
                  "position": [1.2050851695453755,0.35610451065083815,23.458024920999648],
