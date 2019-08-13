@@ -24,20 +24,34 @@ var themodel = {
       }]
       }
 ```
-- Now make a function iterating the setCameraLookAt() for each position. 
+- Let's wrapp the init function in a load function so we can load models dynamically. 
 ```
-function setCamera(api) {
-  api.setCameraLookAt(cameraPositions[posIndex].position, cameraPositions[posIndex].target, 3);
-  posIndex++; 
-}
+function loadModel( client, urlid ) {
+            console.log( 'loading a model' );
+            client.init( urlid, {
+                success: success
+            });
+        }
 ```
-- Add it to the click loop like so: 
+- The new success function look like this:  
 ```
-if (info.position2D[0] < 100) {
-  promtCameraPosition(api);
-} else {
-  setCamera(api);
-}
+function success( callback ) {
+      api = callback;
+      api.start();
+      api.addEventListener( 'viewerready', function() {
+          api.addEventListener(
+              'click',
+              function(info) {
+                // get the camera position by clicking on the far left of screen
+                if (info.position2D[0] < 100) {
+                  promtCameraPosition(api);
+                } else {
+                  setCamera(api);
+                }
+              }
+          );
+      });
+  };
 ```
 - as well as position index at the top of the document. 
 ```
