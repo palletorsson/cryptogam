@@ -4,7 +4,7 @@
 - The sketchfab viewer api are used for the exploration: https://sketchfab.com/developers/viewer
 
 ##  Dynamically load models
--  We want to make an animation from several 3d models - load multiple models dynamically. In order to do so we need to restructure the list and it will become longer, so let's separate the model data from the script file. 
+-  In order to dynamically keep track of the diffrent model we need to restructure the list to include current models. The list will grow and  become longer, so it is a good idea to separate the model data from the script file. 
 ```
 var models = {
     "models": {
@@ -53,7 +53,7 @@ var models = {
 <script type="text/javascript" src="./js/modeldata.js"></script>
 <script type="text/javascript" src="./js/myscript.js"></script>
 ```
-- Ok, we also need a modelsnames list to keep track of the models, at the top of your modeldata file add. 
+- Ok, we also need a modelsnames list variable to keep track of the models, at the top of your modeldata file add. 
 ```
 var modelNames = ["Candleman", "nudeMan"];
 ```
@@ -65,7 +65,7 @@ var modelIndexCount = 0;
 var currentEventList = ''
 var currentModel = ''; 
 ```
-- Now make a function that changes model. 
+- Now make a function that changes model and update the animations events. 
 ```
 function setNextModelEvents() {
   var currentModelname = modelNames[modelIndexCount];
@@ -76,7 +76,7 @@ function setNextModelEvents() {
   }
 }
 ```
--  In the click function we need to keep track of if the list of event is at the end and the load a new model. 
+-  In the click function we need to keep track of when the event list for each models ends and then load a new model. 
 ```
 if (posIndex == currentEventList.length) {
     setNextModelEvents();
