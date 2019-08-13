@@ -5,7 +5,7 @@
 
 ##  Playback the camera position 
 -  By using the api function [setCameraLookAt](https://sketchfab.com/developers/viewer/functions#api-setCameraLookAt) we can set a camera position. If we have a list of camera positions we can now trigger an animation.  
-- make a list of the positions
+- make a list of the positions and save the list a new veriable called cameraPositions
 ```
 var cameraPositions = [
       {
@@ -21,7 +21,7 @@ var cameraPositions = [
           "target": [-6.295946179228759,2.5339818999264883,15.220566998191604],
       }]
 ```
-- Now make a function iterating the setCameraLookAt() for each position. 
+- Now make a function iterating the setCameraLookAt() for each position. We add one to the posistion index called posIndex for every iteration. 
 ```
 function setCamera(api) {
   api.setCameraLookAt(cameraPositions[posIndex].position, cameraPositions[posIndex].target, 3);
@@ -36,9 +36,9 @@ if (info.position2D[0] < 100) {
   setCamera(api);
 }
 ```
-- as well as pposition index at the top of the document. 
+- At the top of the document add a variable for the position index. 
 ```
 var posIndex = 0;
 ```
-- Review the the animation. Nice!
+- Aave and review. Nice the animation!
 
