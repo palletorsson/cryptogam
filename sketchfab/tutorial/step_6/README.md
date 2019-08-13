@@ -75,7 +75,7 @@ function setNextModelEvents() {
   }
 }
 ```
-In the click function we need to keep track of if the list of event is at the end and the load a new model. 
+-  In the click function we need to keep track of if the list of event is at the end and the load a new model. 
 ```
 if (posIndex == currentEventList.length) {
     setNextModelEvents();
@@ -86,3 +86,4 @@ if (posIndex == currentEventList.length) {
     setCamera(api);
   }
 ```
+- Nice, you should be able to load your models dynamically.
