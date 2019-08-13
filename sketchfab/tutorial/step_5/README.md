@@ -52,10 +52,4 @@ function success( callback ) {
           );
       });
   };
-```
-- as well as position index at the top of the document. 
-```
-var posIndex = 0;
-```
-- Review the the animation. Nice!
 
