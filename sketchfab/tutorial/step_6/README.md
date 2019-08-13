@@ -3,8 +3,8 @@
 - This tutorial explores how to make animations inside the 3d-models of the website sketchfab.com.
 - The sketchfab viewer api are used for the exploration: https://sketchfab.com/developers/viewer
 
-##  Dynamically load models
--  In order to dynamically keep track of the diffrent model we need to restructure the list to include current models. The list will grow and  become longer, so it is a good idea to separate the model data from the script file. 
+##  Load and keep track more then one model
+-  In order to dynamically keep track and load of the diffrent model we need to restructure the list to include current models. The list will grow and  become longer, so it is a good idea to separate the model data from the script file. 
 ```
 var models = {
     "models": {
