@@ -40,5 +40,5 @@ if (info.position2D[0] < 100) {
 ```
 var posIndex = 0;
 ```
-- Aave and review. Nice the animation!
+- Save and review. Nice the animation!
 
