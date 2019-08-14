@@ -1,4 +1,4 @@
-# Radical Inside : Tutorial part 6
+# Radical Inside : Tutorial part 7
 
 - This tutorial explores how to make animations inside the 3d-models of the website sketchfab.com.
 - The sketchfab viewer api are used for the exploration: https://sketchfab.com/developers/viewer
