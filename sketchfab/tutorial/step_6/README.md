@@ -9,7 +9,7 @@
 var models = {
     "models": {
       "Candleman": {
-          "uid":  "d8b7b27ec323428e9a1d86692d5d8466",
+          "uid":  "c966755a1efe451b80925b19ed6a9318",
           "events": [
             {
                "position": [0.17116218147772588,-0.5164971178787727,86.78621693231594],
@@ -23,8 +23,7 @@ var models = {
                 "position": [-6.2959436411001,2.5339732345834407,15.220666589705965],
                 "target": [-6.295946179228759,2.5339818999264883,15.220566998191604],
             }]
-          }
-        },
+          },
         "nudeMan": {
             "uid":  "5ecaebeeb2264ebaa08bc0addeff18c8",
             "events": [
@@ -35,14 +34,15 @@ var models = {
               {
                  "position": [1.2050851695453755,0.35610451065083815,23.458024920999648],
                  "target": [0.4713177552963772,0.2253916276847266,21.932639133384615],
-                
+
               },
               {
                  "position": [0.11087075370661757,-0.20044267233765672,14.44895172097236],
-                 "target": [0.13731880157914786,-0.2574600630303609,13.97829167254557],     
+                 "target": [0.13731880157914786,-0.2574600630303609,13.97829167254557],
               }]
             }
           }
+        }
 ```
 - Copy and paste the list above or make your own in the same fashion. Past you model data into a new empty file and save it as modeldata.js in the js folder. 
 ```
@@ -77,14 +77,38 @@ function setNextModelEvents() {
 }
 ```
 -  In the click function we need to keep track of when the event list for each models ends and then load a new model. 
+- We also need logic and a variable called isClicking to stop the api from registering multiple clicks.
 ```
-if (posIndex == currentEventList.length) {
-    setNextModelEvents();
-    posIndex = 0;
-    var uid = currentModel.uid;
-    loadModel( client, uid );
-  } else {
-    setCamera(api);
+if (isClicking == false) {
+      // get the camera position by clicking on the far left of screen
+      if (info.position2D[0] < 100) {
+        promtCameraPosition(api);
+      } else {
+        console.log(posIndex, currentEventList.length);
+        if (posIndex == currentEventList.length) {
+            setNextModelEvents();
+            var uid = currentModel.uid;
+            loadModel( client, uid );
+            api.stop();
+        } else {
+          setCamera(api);
+        }
+      }
+    } // end of false clicking
+    isClicking = true;
+    setTimeout(function(){
+      isClicking = false;
+    }, 1000);
   }
 ```
-- Nice, you should be able to load your models dynamically.
+- Add the variable at the top of the script. 
+```
+var isLoading = false;
+```
+- Also when the in the beginning of the success fuction we new to reset the loading flag and event position index. 
+```
+api.start();
+isClicking = false;
+posIndex = 0;
+```
+- Nice, you should be able to load and loop your models dynamically.
