@@ -51,13 +51,14 @@ function setNextModelEvents() {
   if (modelIndexCount < modelNames.length -1) {
     modelIndexCount++;
   } else {
-    modelIndexCount = 0; 
+    modelIndexCount = 0;
   }
 
 }
 
 function setCamera(api) {
-  api.setCameraLookAt(currentEventList[posIndex].position, currentEventList[posIndex].target, 3);
+  console.log(currentEventList[posIndex]); 
+  api.setCameraLookAt(currentEventList[posIndex].position, currentEventList[posIndex].target, currentEventList[posIndex].duration);
   posIndex++;
 }
 
