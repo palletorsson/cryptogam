@@ -111,4 +111,4 @@ api.start();
 isClicking = false;
 posIndex = 0;
 ```
-- Nice, you should be able to load your models dynamically.
+- Nice, you should be able to load and loop your models dynamically.
