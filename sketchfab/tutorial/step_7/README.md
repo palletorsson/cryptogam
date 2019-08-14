@@ -53,7 +53,9 @@ var models = {
 - Now  add the duration to the setCamera function. 
 ```
 function setCamera(api) {
-  api.setCameraLookAt(currentEventList[posIndex].position, currentEventList[posIndex].target, currentEventList[posIndex].duration);
+  api.setCameraLookAt(  currentEventList[posIndex].position, 
+                        currentEventList[posIndex].target, 
+                        currentEventList[posIndex].duration);
   posIndex++;
 }
 ```
