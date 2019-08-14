@@ -39,3 +39,14 @@ function animationEvent(info, api) {
           );
 ```
 - Now lets make a recursive a function that run the animation automatically. 
+```
+function atomaticAnimation() {
+  setTimeout(function() {
+      posIndex++;
+      if (autoplay == true)  {
+        eventColleted();
+      }
+  }, currentEventList[posIndex].duration * 1000);
+}
+```
+
