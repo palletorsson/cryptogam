@@ -5,28 +5,40 @@ var modelIndexCount = 0;
 var currentEventList = ''
 var currentModel = '';
 var posIndex = 0;
-
+var isClicking = false;
 
 function success( callback ) {
       api = callback;
       api.start();
+      isClicking = false;
+      posIndex = 0;
+      console.log(currentModel);
       api.addEventListener( 'viewerready', function() {
+
           api.addEventListener(
               'click',
               function(info) {
-                // get the camera position by clicking on the far left of screen
-                if (info.position2D[0] < 100) {
-                  promtCameraPosition(api);
-                } else {
-                  if (posIndex == currentEventList.length) {
-                    setNextModelEvents();
-                    posIndex = 0;
-                    var uid = currentModel.uid;
-                    loadModel( client, uid );
+
+                if (isClicking == false) {
+                  // get the camera position by clicking on the far left of screen
+                  if (info.position2D[0] < 100) {
+                    promtCameraPosition(api);
                   } else {
-                    setCamera(api);
+                    console.log(posIndex, currentEventList.length);
+                    if (posIndex == currentEventList.length) {
+                        setNextModelEvents();
+                        var uid = currentModel.uid;
+                        loadModel( client, uid );
+                        api.stop();
+                    } else {
+                      setCamera(api);
+                    }
                   }
-                }
+                } // end of false clicking
+                isClicking = true;
+                setTimeout(function(){
+                  isClicking = false;
+                }, 1000);
               }
           );
       });
@@ -36,10 +48,12 @@ function setNextModelEvents() {
   var currentModelname = modelNames[modelIndexCount];
   currentModel = models.models[currentModelname];
   currentEventList = currentModel.events;
-  console.log(currentModel.uid);
-  if (modelIndexCount < models.models.length) {
+  if (modelIndexCount < modelNames.length -1) {
     modelIndexCount++;
+  } else {
+    modelIndexCount = 0; 
   }
+
 }
 
 function setCamera(api) {
@@ -59,7 +73,9 @@ function promtCameraPosition(api) {
 function loadModel( client, urlid ) {
      console.log( 'loading a model' );
      client.init( urlid, {
-         success: success
+         success: success,
+         internal: 1
+
      });
  }
 
