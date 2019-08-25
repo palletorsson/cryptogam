@@ -4,7 +4,7 @@ Welcome to the feasibility study for the 3-year artistic research project The Wo
 
 The study include three diffrent cases and a number of sketches. 
   
-1. Radical Inside (text 80%, code 80%, tutorial 60%, visulaization 100%)
+1. Radical Inside (text 80%, code 80%, tutorial 60%, proof of concept video 100%)
    1. text: https://tinyurl.com/yycby5pq
    2. code: https://github.com/palletorsson/cryptogam/tree/master/sketchfab
    3. tutorial: https://github.com/palletorsson/cryptogam/tree/master/sketchfab/tutorial
