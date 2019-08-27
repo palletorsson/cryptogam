@@ -9,10 +9,10 @@ The study include three diffrent cases and a number of sketches.
    2. code: https://github.com/palletorsson/cryptogam/tree/master/sketchfab
    3. tutorial: https://github.com/palletorsson/cryptogam/tree/master/sketchfab/tutorial
    4. video: https://www.researchcatalogue.net/text-editor/simple-media-resource?research=672575&simple-media=672649
-2. Amazing Animal Keyboard (text 60%, code 90% finished)
+2. Amazing Animal Keyboard (text 70%, code 90% finished, work 50%)
    1. text: https://tinyurl.com/y5qjy9j2
    2. code: https://github.com/palletorsson/cryptogam/tree/master/amazinganimalkeyboard
-3. Face Dection in Modern Art (text 50%, code 90% finished)
+3. Face Dection in Modern Art (text 50%, code 90% finished, work 50%)
    1. text: https://tinyurl.com/yyz6prqa
    2. code: https://github.com/palletorsson/cryptogam/tree/master/facesofmodernart
 
