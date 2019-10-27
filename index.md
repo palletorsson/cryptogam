@@ -3604,6 +3604,10 @@
               setTimeout(function(){
                 $('iframe').css('opacity','1');
               }, 14000);
+              $('iframe').css('position', 'fixed');
+              $('iframe').css('top', 0);
+              $('iframe').css('left', 0);
+
           };
 
 
