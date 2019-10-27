@@ -14,7 +14,7 @@
     <body>
         <!-- add iframe here -->
         <div class="fixed">
-        <iframe src="" id="api-frame" width="800px" height="600px"></iframe>
+        <iframe src="" id="api-frame" width="600px" height="400px"></iframe>
     <!-- add link your code here -->
 
         <script type="text/javascript">
@@ -3603,7 +3603,7 @@
               });
               setTimeout(function(){
                 $('iframe').css('opacity','1');
-              }, 14000);
+              }, 1000);
               $('.fixed').css('position', 'fixed');
               $('.fixed').css('top', 0);
               $('.fixed').css('left', 0);
