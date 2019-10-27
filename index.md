@@ -13,7 +13,7 @@
 
     <body>
         <!-- add iframe here -->
-        <div>
+        <div class="fixed">
         <iframe src="" id="api-frame" width="800px" height="600px"></iframe>
     <!-- add link your code here -->
 
@@ -3604,9 +3604,9 @@
               setTimeout(function(){
                 $('iframe').css('opacity','1');
               }, 14000);
-              $('iframe').css('position', 'fixed');
-              $('iframe').css('top', 0);
-              $('iframe').css('left', 0);
+              $('.fixed').css('position', 'fixed');
+              $('.fixed').css('top', 0);
+              $('.fixed').css('left', 0);
 
           };
 
