@@ -28,8 +28,65 @@ error = function() {
 success = function(callback) {
 
     api = callback;
-   //  api.addEventListener( 'viewerready', function() {
-   api.addEventListener( 'viewerready', function() {
+  //  api.addEventListener( 'viewerready', function() {
+  api.addEventListener(
+      'click',
+      function(info) {
+          console.log('click ' + info.position2D);
+          if (info.instanceID) {
+              // hit
+              console.log('click ' + info.instanceID);
+          }
+          api.getWorldToScreenCoordinates(worldCoord, function(coord) {
+    console.log(coord.glCoord, coord.canvasCoord);
+});
+      },
+      { pick: 'slow' }
+
+  );
+
+   api.addEventListener( 'viewerready', function(e) {
+
+
+
+     api.setPostProcessing({
+         enable: true,
+         sharpenEnable: true
+     });
+     var iframe = $('#api-frame');
+
+     $(iframe.contents).find("body").on('keydown', function(event) {
+         alert('test');
+     });
+     var roting  = 0;
+     setInterval(function() {
+       api.getRootMatrixNode( function ( err, id, m ) {
+
+            rootNode = id;
+            rootTransform = m;
+            api.rotate(rootNode, [Math.PI * 0.05 * roting, 0, 0, 0.001], roting, 'easeInOutCircle', function(
+              err,
+              rotateTo
+
+           ) {
+            //   console.log('Object has been rotated according to', rotateTo);
+           });
+           roting  = roting + 0.005;
+        } );
+
+
+
+     }, 42);
+     var model = iframe.contents().find(".has-model");  //.css('cursor', 'none');
+     $( "#api-frame" ).css('cursor', 'none');
+
+      api.setWireframe(true, {color: '#FF0000FF'});
+     console.log(api.getLight(1))
+
+     api.setLight(2, {color: '00FF00FF'});
+     api.setLight(1, {color: '00FF00FF'});
+     api.setShadingStyle('matcap');
+     //api.setEnvironment({color: '#FF000000'}, function(err){console.log(err)});
     setTimeout(function() {
       eventIndex=0;
       api.start();
@@ -43,7 +100,7 @@ success = function(callback) {
           });
           //api.setFov(50);
 
-    }, 3000);
+    }, 5000);
     //$("#api-frame").fadeIn(5000);
 
 
@@ -72,9 +129,10 @@ success = function(callback) {
     api.addEventListener(
         'click',
         function(info) {
+         console.log("info: ", info);
           if (autom == false) {
 
-                eventColleted();
+                //eventColleted();
 
             }
        });
@@ -100,7 +158,7 @@ function eventColleted() {
         eventColleted();
       }
 
-  }, currentEvent.duration * 800);
+  }, currentEvent.duration * 600);
 }
 
 function nextAnimation(currentEvent) {
@@ -113,9 +171,6 @@ function nextAnimation(currentEvent) {
       }
       console.log(currentEvent)
       // check event type
-      api.hide();
-      api.load();
-      api.show();
       if (currentEvent.event == 'load') {
 
           api.stop();
@@ -205,4 +260,4 @@ function randomEasing(easeIndex) {
 // Listen for click events on the buttons
 setTimeout(function() {
     loadModel(client, model);
-}, 2000);
+}, 3000);

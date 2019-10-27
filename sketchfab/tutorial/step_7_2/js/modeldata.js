@@ -6,7 +6,7 @@ var modelIndex = [ "proceduralHardSurfaceModelingTest", "marvelBlackWidowFanart"
                     "sciFiNinjaPbr",
                      "darthVader", "irenaZajtseva",
                     "swimming", "dungeonmakerEmma", "vaseFromParkInKonopisteChateau", "tsubaki",
-                    "asley",  "3dScanMan", "theCreatureOfTheLabyrinth",
+                    "asley",  "_3dScanMan", "theCreatureOfTheLabyrinth",
                      "tsubakiMkIiobj","gwenStacy", "skytree", "sleepTight",
                      "futurePoliceKnight", "maliakaZsketch", "babyShark","mythCreatureRound",
                     "marvelBlackWidowFanart", "HeavyBlasterGun", "ashantiDanceHall", "fantasyHordeOgres",
@@ -1006,37 +1006,37 @@ var allModels = {
                         "duration": "slow",
                         "position": [-37.52874101310377,-5.908622104984576,136.84444310991245],
                         "target": [-5.9446915243905,5.67434081740448,158.5147098054592],
-                        "duration": 10.05
+                        "duration": 5.05
                     },{
                         "event": "fadein",
                         "duration": "slow",
                         "position": [-37.52874101310377,-5.908622104984576,136.84444310991245],
                         "target": [-5.9446915243905,5.67434081740448,158.5147098054592],
-                        "duration": 10.05
+                        "duration": 5.05
                     },{
                         "event": "fadein",
                         "duration": "slow",
                         "position": [-37.52874101310377,-5.908622104984576,136.84444310991245],
                         "target": [-5.9446915243905,5.67434081740448,158.5147098054592],
-                        "duration": 10.0
+                        "duration": 5.0
                     },{
                         "event": "fadein",
                         "duration": "slow",
                         "position": [-7.828914162984849,-2.242803259297639,165.84550530458515],
                         "target": [-7.881033052318699,-2.3672914688750213,163.7976920508067],
-                        "duration": 10.0
+                        "duration": 5.0
                     },{
                         "event": "fadein",
                         "duration": "slow",
                         "position": [-5.849984061471376,-7.273505753675353,149.7246737841655],
                         "target": [-5.849981643355565,-7.273506361240031,149.72457381525243],
-                        "duration": 10.0
+                        "duration": 5.0
                     },{
                         "event": "fadein",
                         "duration": "slow",
                         "position": [-6.138680831997722,-1.9800030430370994,162.30412639446507],
                         "target": [-6.138679368875226,-1.9800024716609248,162.30402640680182],
-                        "duration": 10.0
+                        "duration": 5.0
                     },
 
 
@@ -1180,31 +1180,31 @@ var allModels = {
                         "duration": "slow",
                        "position": [-9.959667997098343,6.786811566978388,233.22725426087715],
                        "target": [-10.445675389784894,7.344791212683686,186.1236542460301],
-                        "duration": 0.05
+                        "duration": 20.05
                     },{
                         "event": "fadein",
                         "duration": "slow",
                         "position": [-9.959667997098343,6.786811566978388,233.22725426087715],
                        "target": [-10.445675389784894,7.344791212683686,186.1236542460301],
-                       "duration": 0.05
+                       "duration": 6.05
                     },{
                         "event": "fadein",
                         "duration": "slow",
                         "position": [-3.9461383504511023,-4.040323202151489,207.04518606015284],
                         "target": [-4.810637642813174,-6.980672656007613,188.08870125211044],
-                        "duration": 3.0
+                        "duration": 6.0
                     },{
                         "event": "fadein",
                         "duration": "slow",
                         "position": [-1.2194278678382262,3.4224896733188617,146.0046578286426],
                         "target": [-1.219396163448749,3.4224980182165545,146.00456335539573],
-                        "duration": 3.0
+                        "duration": 6.0
                     },{
                         "event": "fadein",
                         "duration": "slow",
                         "position": [24.868594399400084,-19.69896130571815,80.61868256966255],
                         "target": [24.868621719311992,-19.698984483116178,80.61858920783612],
-                        "duration": 3.0
+                        "duration": 6.0
                     },{
                         "event": "fadein",
                         "duration": "slow",
@@ -1774,7 +1774,7 @@ var allModels = {
                         "event": "load"
                     }
                 ]
-        }, "3dScanMan": {
+        }, "_3dScanMan": {
             "id":  "ad42febfaeb64aa0992e804acc9e7ccd",
             "events": [
                     {
@@ -1941,7 +1941,7 @@ var allModels = {
                         "target": [1.6793944773113325,0.7810772570108111,14.336667444640968],
 
 
-                        "duration": 0.05
+                        "duration": 2.05
  },{
                         "event": "fadein",
                         "duration": "slow",
@@ -1949,7 +1949,7 @@ var allModels = {
                         "target": [1.6793944773113325,0.7810772570108111,14.336667444640968],
 
 
-                        "duration": 0.05
+                        "duration": 2.05
                     },{
                         "event": "fadein",
                         "duration": "slow",
@@ -2674,7 +2674,7 @@ var allModels = {
                         "duration": "slow",
                         "position": [-0.8429769282832975,-23.7136180420755,181.11970500305182],
                         "target": [-2.8612485989174683,-21.729960610050856,0.977680630449706],
-                        "duration": 10.05
+                        "duration": 0.05
                     },{
                         "event": "fadein",
                         "duration": "slow",

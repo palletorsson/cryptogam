@@ -1,10 +1,12 @@
 var iframe = document.getElementById( 'api-frame' );
-var uid = 'c966755a1efe451b80925b19ed6a9318';
+console.log(allModels.models.asley)
+model = allModels.models.alitaBattleAngel;
+var uid = model.id;
 var version = '1.5.1';
-var client = new Sketchfab( version, iframe );
-
+var client = new Sketchfab( iframe );
+var currentEventList = model.events
+console.log(currentEventList[0])
 var modelIndexCount = 0;
-var currentEventList = ''
 var currentModel = '';
 var posIndex = 0;
 var isClicking = false;
@@ -13,41 +15,15 @@ var cooldown = false;
 var isLoading = false;
 var iframeName = '';
 
-
-
 function success( callback ) {
       api = callback;
       api.load();
-       api.start();
+      api.start();
       isClicking = false;
       cooldown = false;
-
       api.addEventListener( 'viewerready', function() {
-
- setTimeout(function() {
-         isLoading = false;
-         posIndex = 0;
-        if (autoplay == true) {
-           console.log("autoplay");
-
-             posIndex = 0;
-
-                    animationEvent();
-
-
-        }
-          }, 2000);
-
-          api.addEventListener(
-              'click',
-              function(info) {
-                  screenEvent(info)
-                }
-          );
+           animationEvent();
       });
-
-
-
   };
 
 
@@ -67,40 +43,17 @@ function screenEvent(info) {
 }
 
 function animationEvent() {
-  if (isLoading == false) {
-    console.log("not loading");
-    if (posIndex == currentEventList.length) {
-        api.stop();
-        isLoading = true;
-        setNextModelEvents();
-        var uid = currentModel.uid;
-        clearTimeout(currentAnimation);
-        var client = new Sketchfab( version, iframe );
-        setTimeout(function() {
-          loadModel( client, uid  )
-        }, 1000);
-    } else {
+
       if (autoplay == true) {
         var currentAnimation =  setTimeout(function() {
               animationEvent();
-            }, currentEventList[posIndex].duration * 1000);
+            }, currentEventList[posIndex].duration * 300);
       }
       setCamera();
     }
-  }
-}
 
 
-function setNextModelEvents() {
-  var currentModelname = modelNames[modelIndexCount];
-  currentModel = models.models[currentModelname];
-  currentEventList = currentModel.events;
-  if (modelIndexCount < modelNames.length -1) {
-    modelIndexCount++;
-  } else {
-    modelIndexCount = 0;
-  }
-}
+
 
 function setCamera() {
   if (isLoading == false) {
@@ -158,5 +111,23 @@ function rebuildIframe() {
   var client = new Sketchfab( ifrm );
 }
 
+
+
+function loadModel(client, urlid) {
+    client.init(urlid, {
+        success: success,
+        internal: 1,
+        ui_infos: 0,
+        ui_controls: 1,
+        ui_vr: 0,
+        ui_help: 0,
+        ui_setttings: 0,
+        ui_stop: 0,
+        watermark: 0,
+        fullscreen: 1,
+        preload: 1
+
+    });
+}
+
 loadModel( client, uid );
-setNextModelEvents();
