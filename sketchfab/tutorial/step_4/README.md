@@ -42,3 +42,6 @@ var posIndex = 0;
 ```
 - Save and review. Nice the animation!
 
+### proceed to the next step
+* https://github.com/palletorsson/cryptogam/edit/master/sketchfab/tutorial/step_5
+

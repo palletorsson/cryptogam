@@ -33,7 +33,7 @@
 ```
 
 ### Html structure
-- The boilerplate webpage has an autonomy consisting of html element and inside the element a head and a body.
+- The boilerplate webpage has an structure consisting of html element and inside the element a head and a body.
 
 ### Link the library code 
 - In the head we will link to the sketchfab library so we can use its 3D functions of sketchfab.com.
@@ -72,3 +72,6 @@
 ```
 ### Edges of an empty window
 - If you open on the index.html file i a web browser you should see an the edges of an empty window. 
+
+### Proceed to step 2
+https://github.com/palletorsson/cryptogam/tree/master/sketchfab/tutorial/step_2
