@@ -4,11 +4,11 @@
 - The sketchfab viewer api are used for the exploration: https://sketchfab.com/developers/viewer
 
 ##  Dynamically load a 3d model
--  We want to make an animation from several 3d models, so lets try to load one dynamically. Expand our list of positions with the current model. 
+-  We want to make an animation from several 3d models, so lets try to load one dynamically. Expand our list of positions with the current model.
 ```
 var themodel = {
-      uid: 'c966755a1efe451b80925b19ed6a9318', 
-      title: 'Candleman', 
+      uid: 'c966755a1efe451b80925b19ed6a9318',
+      title: 'Candleman',
       cameraPositions: [
       {
          "position": [0.17116218147772588,-0.5164971178787727,86.78621693231594],
@@ -24,7 +24,7 @@ var themodel = {
       }]
       }
 ```
-- Wrapp the init function in a load function so we can load models dynamically. 
+- Wrap the init function in a load function so we can load models dynamically.
 ```
 function loadModel( client, urlid ) {
             console.log( 'loading a model' );
@@ -44,7 +44,7 @@ function success( callback ) {
               function(info) {
                 // get the camera position by clicking on the far left of screen
                 if (info.position2D[0] < 100) {
-                  promtCameraPosition(api);
+                  promptCameraPosition(api);
                 } else {
                   setCamera(api);
                 }

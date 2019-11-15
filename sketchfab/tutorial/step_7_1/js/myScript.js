@@ -4,22 +4,13 @@ var uid = model.id;
 var version = '1.5.1';
 var client = new Sketchfab( iframe );
 var currentEventList = model.events
-var modelIndexCount = 0;
-var currentModel = '';
 var posIndex = 0;
-var isClicking = false;
-var cooldown = false;
-var isLoading = false;
-var iframeName = '';
-var playanimation = true;
-var clickview = true;
+var clickview = false;
 
 function success( callback ) {
       api = callback;
       api.load();
       api.start();
-      isClicking = false;
-      cooldown = false;
       api.addEventListener( 'viewerready', function() {
            if (clickview) {
              api.addEventListener(
@@ -31,40 +22,30 @@ function success( callback ) {
                    }
                  }
              );
+           } else {
+              animationEvent();
            }
-           if (playanimation) {
-             animationEvent();
-           }
+
       });
   };
 
 function animationEvent() {
   if(posIndex > currentEventList.length-1) {
-
     posIndex=1;
   }
   var currentAnimation =  setTimeout(function() {
     animationEvent();
-  }, currentEventList[posIndex].duration * 300);
+  }, 10000);
   setCamera();
 }
 
 function setCamera() {
-  if (isLoading == false) {
-    console.log(posIndex, currentEventList.length);
-    api.setCameraLookAt(currentEventList[posIndex].position, currentEventList[posIndex].target, currentEventList[posIndex].duration);
-    if (cooldown == false) {
-      posIndex++;
-      cooldown = true;
-
-    } else {
-      setTimeout(function(){
-        cooldown = false;
-      }, 1000);
-    }
-
-
-  }
+    api.setCameraLookAt(
+                        currentEventList[posIndex].position,
+                        currentEventList[posIndex].target,
+                        10.0
+                      );
+    posIndex++;
 }
 
 function promtCameraPosition() {

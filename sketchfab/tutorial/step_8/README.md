@@ -3,8 +3,8 @@
 - This tutorial explores how to make animations inside the 3d-models of the website sketchfab.com.
 - The sketchfab viewer api are used for the exploration: https://sketchfab.com/developers/viewer
 
-## Atomatic animation 
--  We want to trigger the animation automatically without a click. To do so we need to make a function out of the logic in the click function. Take it out an wrapp it in a new function call animationEvent.
+## Atomatic animation
+-  We want to trigger the animation automatically without a click. To do so we need to make a function out of the logic in the click function. Take it out an wrap it in a new function call animationEvent.
 ```
 function animationEvent(info, api) {
   if (isClicking == false) {
@@ -29,7 +29,7 @@ function animationEvent(info, api) {
   }, 1000);
 }
 ```
-- Inside the click function we call the function. 
+- Inside the click function we call the function.
 ```
   api.addEventListener(
               'click',
@@ -38,7 +38,7 @@ function animationEvent(info, api) {
                 }
           );
 ```
-- Now lets make a recursive a function that run the animation automatically. 
+- Now lets make a recursive a function that run the animation automatically.
 ```
 function atomaticAnimation() {
   setTimeout(function() {
@@ -49,4 +49,3 @@ function atomaticAnimation() {
   }, currentEventList[posIndex].duration * 1000);
 }
 ```
-
