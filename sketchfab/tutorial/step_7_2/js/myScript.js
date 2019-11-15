@@ -1,19 +1,18 @@
 var iframe = document.getElementById( 'api-frame' );
-console.log(allModels.models.asley)
-model = allModels.models.alitaBattleAngel;
+model = allModels.models.dreamwordSexygirlNvwang;
 var uid = model.id;
 var version = '1.5.1';
 var client = new Sketchfab( iframe );
 var currentEventList = model.events
-console.log(currentEventList[0])
 var modelIndexCount = 0;
 var currentModel = '';
 var posIndex = 0;
 var isClicking = false;
-var autoplay = true;
 var cooldown = false;
 var isLoading = false;
 var iframeName = '';
+var playanimation = true;
+var clickview = true;
 
 function success( callback ) {
       api = callback;
@@ -22,38 +21,33 @@ function success( callback ) {
       isClicking = false;
       cooldown = false;
       api.addEventListener( 'viewerready', function() {
-           animationEvent();
+           if (clickview) {
+             api.addEventListener(
+                 'click',
+                 function(info) {
+                   // get the camera position by clicking on the far left of screen
+                   if (info.position2D[0] < 100) {
+                     promtCameraPosition(api);
+                   }
+                 }
+             );
+           }
+           if (playanimation) {
+             animationEvent();
+           }
       });
   };
 
-
-function screenEvent(info) {
-  if (isClicking == false) {
-    // get the camera position by clicking on the far left of screen
-    if (info.position2D[0] < 100) {
-      promtCameraPosition();
-    } else {
-      animationEvent()
-    }
-  } // end of false clicking
-  isClicking = true;
-  setTimeout(function(){
-    isClicking = false;
-  }, 1000);
-}
-
 function animationEvent() {
-
-      if (autoplay == true) {
-        var currentAnimation =  setTimeout(function() {
-              animationEvent();
-            }, currentEventList[posIndex].duration * 300);
-      }
-      setCamera();
-    }
-
-
-
+  if(posIndex > currentEventList.length-1) {
+    
+    posIndex=0;
+  }
+  var currentAnimation =  setTimeout(function() {
+    animationEvent();
+  }, currentEventList[posIndex].duration * 300);
+  setCamera();
+}
 
 function setCamera() {
   if (isLoading == false) {
@@ -62,17 +56,16 @@ function setCamera() {
     if (cooldown == false) {
       posIndex++;
       cooldown = true;
-    } else {
 
+    } else {
       setTimeout(function(){
         cooldown = false;
       }, 1000);
     }
 
+
   }
 }
-
-
 
 function promtCameraPosition() {
   api.getCameraLookAt(function(err, camera) {
@@ -81,36 +74,6 @@ function promtCameraPosition() {
     prompt("Copy to clipboard: Ctrl+C, Enter", pos_log);
   });
 }
-
-function loadModel( client, urlid ) {
-     console.log( 'loading a model' );
-
-     client.init( urlid, {
-         success: success,
-         camera: 0,
-         preload: 1,
-         error: function onError() {
-              console.log( 'Viewer error' );
-          }
-     });
- }
-
-function rebuildIframe() {
-  var iframes = document.querySelectorAll('iframe');
-  for (var i = 0; i < iframes.length; i++) {
-      iframes[i].parentNode.removeChild(iframes[i]);
-  }
-  var r = Math.floor(Math.random()*90000) + 10000;
-  iframeName = "iframe-"+r;
-  var ifrm = document.createElement("iframe");
-  ifrm.setAttribute('id', 'iframeName');
-  ifrm.setAttribute('class', 'iframeName');
-  ifrm.style.width = "800px";
-  ifrm.style.height = "800px";
-  document.body.appendChild(ifrm);
-  var client = new Sketchfab( ifrm );
-}
-
 
 
 function loadModel(client, urlid) {
@@ -126,7 +89,6 @@ function loadModel(client, urlid) {
         watermark: 0,
         fullscreen: 1,
         preload: 1
-
     });
 }
 
