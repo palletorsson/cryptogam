@@ -52,6 +52,6 @@ function success( callback ) {
           );
       });
   };
-
+```
 ### proceed to the next step
 * https://github.com/palletorsson/cryptogam/edit/master/sketchfab/tutorial/step_6
