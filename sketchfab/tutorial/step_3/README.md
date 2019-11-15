@@ -40,3 +40,5 @@ api.addEventListener(
 "position": [-6.2959436411001,2.5339732345834407,15.220666589705965],
 "target": [-6.295946179228759,2.5339818999264883,15.220566998191604],
 ```
+### proceed to the next step
+* https://github.com/palletorsson/cryptogam/edit/master/sketchfab/tutorial/step_4
