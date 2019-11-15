@@ -72,3 +72,6 @@
 ```
 ### Edges of an empty window
 - If you open on the index.html file i a web browser you should see an the edges of an empty window. 
+
+### Proceed to step 2
+https://github.com/palletorsson/cryptogam/tree/master/sketchfab/tutorial/step_2
