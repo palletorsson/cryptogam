@@ -114,4 +114,4 @@ posIndex = 0;
 - Nice, you should be able to load and loop your models dynamically.
 
 ### proceed to the next step
-* https://github.com/palletorsson/cryptogam/edit/master/sketchfab/tutorial/step_4
+* https://github.com/palletorsson/cryptogam/edit/master/sketchfab/tutorial/step_7
