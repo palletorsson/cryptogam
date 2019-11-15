@@ -33,7 +33,7 @@
 ```
 
 ### Html structure
-- The boilerplate webpage has an autonomy consisting of html element and inside the element a head and a body.
+- The boilerplate webpage has an structure consisting of html element and inside the element a head and a body.
 
 ### Link the library code 
 - In the head we will link to the sketchfab library so we can use its 3D functions of sketchfab.com.
