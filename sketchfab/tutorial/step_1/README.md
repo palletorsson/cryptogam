@@ -77,10 +77,10 @@
 
 ```html
 
-  <iframe src="" id="api-frame" class="api-frame" allow="autoplay; fullscreen; vr"
-            allowvr allowfullscreen mozallowfullscreen="true"
-            webkitallowfullscreen="true" width="100%" height="800px">
-  </iframe>
+<iframe src="" id="api-frame" class="api-frame" allow="autoplay; fullscreen; vr"
+          allowvr allowfullscreen mozallowfullscreen="true"
+          webkitallowfullscreen="true" width="100%" height="800px">
+</iframe>
 
 ```
 ### Edges of an empty window
