@@ -8,7 +8,7 @@
 - The code is a webpage and runs in a webbrowser. To make a webpage we use a combination of html, css and javascript. Lets start by making the html document with the necessary html.
 - Paste the boilerplate code below into a code editor of your choice. 
 
-```
+```html
 <!DOCTYPE HTML>
 <html>
     <head>
