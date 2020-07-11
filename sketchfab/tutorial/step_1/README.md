@@ -3,9 +3,9 @@
 - This tutorial explores how to make animations inside the 3d-models of the website sketchfab.com.
 - The sketchfab viewer api are used for the exploration: https://sketchfab.com/developers/viewer 
 
-## Inital setup
+## Initial setup
 - In this first part of the tutorial we will setup the initial code structure to be used. 
-- The code is a webpage and runs in a webbrowser. To make a webpage we use a combination of html, css and javascript. Lets start by making the html document with the necessary html.
+- The code is a webpage and runs in a web browser. To make a webpage we use a combination of html, CSS and JavaScript. Let’s start by making the html document with the necessary html.
 - Paste the boilerplate code below into a code editor of your choice. 
 
 ```html
@@ -37,7 +37,7 @@
 ### Html structure
 - The boilerplate webpage has an structure consisting of html element and inside the element a head and a body.
 
-### Link the library code 
+### Link the sketchfab library
 - In the head we will link to the sketchfab library so we can use its 3D functions of sketchfab.com.
 - Go to https://sketchfab.com/developers/viewer and click on the link. 
     - "Insert this script in your page: sketchfab-viewer-1.5.1.js." 
@@ -84,7 +84,7 @@
 
 ```
 ### Edges of an empty window
-- If you open on the index.html file i a web browser you should see an the edges of an empty window. 
+- If you open on the index.html file i a web browser you should see the edges of an empty window. 
 
 ### Proceed to step 2
 https://github.com/palletorsson/cryptogam/tree/master/sketchfab/tutorial/step_2
