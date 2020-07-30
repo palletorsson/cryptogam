@@ -1,10 +1,10 @@
 # Cryptogam, a feasibility study for an artistic research project.
 
-Welcome to the feasibility study for the 3-year artistic research project The Work of Art in the Age of Algorithmic Reproduction.
+Welcome to the feasibility study for the 3-year artistic research project "Tech From the Inside Out".
 
-The study include three diffrent cases and a number of sketches. 
-  
-1. Radical Inside (text 80%, code 80%, tutorial 60%, proof of concept video 100%)
+The study includes three different cases and several sketches. The study is completed, but the individual projects will continue. At the moment, the project "Radical Inside" is in a peer review process for the VIS – Nordic Journal for Artistic Research. 
+
+1. Radical Inside (text 90%, code 100%, tutorial 90%, proof of concept video 100%)
    1. text: https://tinyurl.com/yycby5pq
    2. code: https://github.com/palletorsson/cryptogam/tree/master/sketchfab
    3. tutorial: https://github.com/palletorsson/cryptogam/tree/master/sketchfab/tutorial
@@ -16,11 +16,8 @@ The study include three diffrent cases and a number of sketches.
    1. text: https://tinyurl.com/yyz6prqa
    2. code: https://github.com/palletorsson/cryptogam/tree/master/facesofmodernart
 
-The current study will be finalized in september 2019 and is now at 60%.
 
 Abstract:
 
-The 3-year artistic research project The Work of Art in the Age of Algorithmic Reproduction explores the relationship between computer systems and transformative subjects, through explorations of technical platforms that pushes their technical limit. A new presentational format can lower thresholds for creative intervention and create escape routes through streamlined interfaces. These investigations are urgent arising from the ever more streamlined reproduction of culture in our algorithmic age. Finally the goal of the project is to show how a deeper experience of digital systems can empower us to be less programmed and more interconnected.
-
-First, the project takes a number of widely adapted technical platforms as a departure and explore in different modes how they can be changed to present transformative and hidden possibilities. Second, a new format - the video performance tutorial - is explored as a format of presentation. Phase three, focuses on adapting the understanding of the often complex transformations of the artworks in the unique media lab at Konstfack. This phase will engage reference groups with discussions of specific questions of transparency, understanding and inclusion, norm criticism and reproducibility. Phase four, means reiteration of the works and format in public exhibitions, both nationally and internationally. The last phase, is dedicated to deepening and disseminating the arguments about the possibilities of the new format in publications.
+The 3-year artistic research project explores and sheds light on the heavily invisible production of social media platforms and software by turning them inside out. The goal is to make artworks self-reflective and even self-aware. First, the research bends and hack the system to reveal its hidden and queer sides. The outcome is at least six significant works that are speculative and mind-blowing and shows how our political and creative agency can have more freedom. From this point, a methodological and theoretical exploration runs in parallel and to raise the complexity and keep the low threshold of engagement. Within a reference group, the artworks are discussed on transparency, understanding and inclusion, norm criticism, and reproducibility to ensure lasting impact. The central outcome is an archive of artworks showing strategies with in-depth instructions that anyone can build on. For artists working in this field, the research is a unique resource. Exhibitions of the work nationally and internationally is an important outcome. The last step is to deepen and disseminating the arguments about the possibilities of the new catalog in publications. By understanding these technologies better, we become more tech-literate and can start to address and understand how ubiquitous software structure society. The importance of creating works of art that can show that, despite our locking systems, we have freedom, enabling a more accessible, creative, queer, and democratic future.
 
