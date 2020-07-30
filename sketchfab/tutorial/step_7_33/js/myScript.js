@@ -1,25 +1,17 @@
 var iframe = document.getElementById( 'api-frame' );
-model = allModels.models.angle;
+model = allModels.models.dreamwordSexygirlNvwang;
 var uid = model.id;
 var version = '1.5.1';
 var client = new Sketchfab( iframe );
 var currentEventList = model.events
-var modelIndexCount = 0;
-var currentModel = '';
 var posIndex = 0;
-var isClicking = false;
-var cooldown = false;
-var isLoading = false;
-var iframeName = '';
-var playanimation = true;
-var clickview = true;
-
+var clickview = false;
+var myMaterials;
 function success( callback ) {
       api = callback;
       api.load();
       api.start();
-      isClicking = false;
-      cooldown = false;
+
       api.addEventListener( 'viewerready', function() {
            if (clickview) {
              api.addEventListener(
@@ -31,11 +23,13 @@ function success( callback ) {
                    }
                  }
              );
+           } else {
+              animationEvent();
            }
-           if (playanimation) {
-             animationEvent();
-           }
+
       });
+
+
   };
 
 function animationEvent() {
@@ -44,26 +38,36 @@ function animationEvent() {
   }
   var currentAnimation =  setTimeout(function() {
     animationEvent();
-  }, currentEventList[posIndex].duration * 300);
+  }, 10000);
   setCamera();
+
 }
 
 function setCamera() {
-  if (isLoading == false) {
     api.setCameraLookAt(
-      currentEventList[posIndex].position,
-      currentEventList[posIndex].target,
-      currentEventList[posIndex].duration
-    );
-    if (cooldown == false) {
-      posIndex++;
-      cooldown = true;
-    } else {
-      setTimeout(function(){
-        cooldown = false;
-      }, 1000);
+                        currentEventList[posIndex].position,
+                        currentEventList[posIndex].target,
+                        10.0
+                      );
+    posIndex++;
+    if (currentEventList[posIndex].interface != undefined) {
+      changeWireframe(currentEventList[posIndex]);
+
     }
-  }
+    if (currentEventList[posIndex].post != undefined) {
+      api.setPostProcessing({
+          bloom: true,
+          bloomFactor: 0.9,
+          bloomRadius: 0.9,
+          sharpenEnable: true
+      }, function() {
+        api.getPostProcessing(function(settings) {
+          console.log(settings);
+        });
+      });
+
+    }
+
 }
 
 function promtCameraPosition() {
@@ -74,9 +78,12 @@ function promtCameraPosition() {
   });
 }
 
+
+
 client.init(uid, {
     success: success,
     internal: 1,
+    blending:1,
     ui_infos: 0,
     ui_controls: 1,
     ui_vr: 0,
@@ -85,5 +92,26 @@ client.init(uid, {
     ui_stop: 0,
     watermark: 0,
     fullscreen: 1,
-    preload: 1
+    preload: 1,
+    wireframe_preload: 1
 });
+
+function changeWireframe(model) {
+
+  if (model.interface == "wireframeon") {
+    api.setWireframe(true, {color: '#FF00FFFF'}, function(err) {
+        if(!err) {
+            console.log('Set wireframe');
+        }
+    });
+  }
+  if (model.interface == "wireframeoff")  {
+    api.setWireframe(false, {color: '#FF00FFFF'}, function(err) {
+        if(!err) {
+            console.log('Set wireframe');
+        }
+    });
+  }
+
+
+}

@@ -1,5 +1,6 @@
 var iframe = document.getElementById( 'api-frame' );
-model = allModels.models.angle;
+model = allModels.models.angel;
+console.log(model);
 var uid = model.id;
 var version = '1.5.1';
 var client = new Sketchfab( iframe );
@@ -53,11 +54,12 @@ function setCamera() {
     api.setCameraLookAt(
       currentEventList[posIndex].position,
       currentEventList[posIndex].target,
-      currentEventList[posIndex].duration
+      currentEventList[posIndex].duration  / 2
     );
     if (cooldown == false) {
       posIndex++;
       cooldown = true;
+      console.log(currentEventList[posIndex].duration);
     } else {
       setTimeout(function(){
         cooldown = false;

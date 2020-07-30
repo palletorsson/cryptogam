@@ -18,10 +18,55 @@ var modelIndex = [ "proceduralHardSurfaceModelingTest", "marvelBlackWidowFanart"
 // "songokuScan", "matteo", "blackCatWm","sciFiFemale",
 // sure 451b46b02bad47d4bd8914944db07313 customRenamonDigimon f9844b850e0f41caaaa5daf0931584d0
 // furryWizzardSkunkCommission ab7c55231ebb432c9c9c8cf9b385a36e demonLordFromClashOfWarlords 7160f7f458194b86b7283bf4f3bd2466
-
+// https://sketchfab.com/3d-models/spacegirl-d809ec01e6234a91a8bae8d6b7b0e438
 var allModels = {
     "models": {
-        "marvelBlackWidowFanart": {
+      "spacegirl": {
+          "id":  "d809ec01e6234a91a8bae8d6b7b0e438",
+          "events": [
+                  {
+                      "event": "fadein",
+                      "duration": "slow",
+                      "position": [0.10073093931211863,0.008516991313824015,1.6001001633288165],
+                      "target": [0.06532165961447983,0.021053621459888924,-0.7626527776244489],
+
+                      "duration": 0.05
+                  },{
+                      "event": "fadein",
+                      "duration": "slow",
+                      "position": [0.10073093931211863,0.008516991313824015,1.6001001633288165],
+                      "target": [0.06532165961447983,0.021053621459888924,-0.7626527776244489],
+                      "duration": 10.05
+                  },{
+                      "event": "fadein",
+                      "duration": "slow",
+                      "position": [0.008301392799543846,-0.1961552423589765,0.28286073919097776],
+                      "target": [-0.0004180658161323468,-0.29330414160595664,-0.7319955040712235],
+                      "duration": 10.5
+                  },{
+                      "event": "fadein",
+                      "duration": "slow",
+                      "position": [0.20457868824187037,-0.3013682119874172,-1.7645071980093867],
+                      "target": [0.21097564408960706,-0.29272092736207755,-1.0798003776749534],
+                      "duration": 10.5
+                  },{
+                      "event": "fadein",
+                      "duration": "slow",
+                      "position": [0.1201800954241051,0.3767541157695381,-3.6731789419121283],
+                      "target": [0.1442136800281049,0.4094889268967828,-1.088071669884223],
+                      "duration": 10.5
+                  },{
+                      "event": "fadein",
+                      "duration": "slow",
+                      "position": [0.004240036700827357,0.24226800919963606,-5.40444008399575],
+                      "target": [0.04401928450508955,0.2972262296507857,-1.085718603634922],
+                      "duration": 10.5
+                  },
+                  {
+                      "event": "load"
+                  }
+              ]
+      },"marvelBlackWidowFanart": {
             "id":  "1fcb308bdb314e26a0a3be3730c37049",
             "events": [
                     {

@@ -25,7 +25,6 @@ function success( callback ) {
            } else {
               animationEvent();
            }
-
       });
   };
 
