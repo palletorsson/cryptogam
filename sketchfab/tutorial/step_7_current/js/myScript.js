@@ -1,8 +1,8 @@
 var iframe = document.getElementById( 'api-frame' );
-model = allModels.models.angel;
+  var model = allModels.models.bowsette;
 console.log(model);
 var uid = model.id;
-var version = '1.5.1';
+var version = '1.8.2';
 var client = new Sketchfab( iframe );
 var currentEventList = model.events
 var modelIndexCount = 0;
@@ -12,15 +12,16 @@ var isClicking = false;
 var cooldown = false;
 var isLoading = false;
 var iframeName = '';
-var playanimation = true;
+var playanimation = false;
 var clickview = true;
 
 function success( callback ) {
       api = callback;
-      api.load();
+      //api.load();
       api.start();
-      isClicking = false;
+      isClicking = true;
       cooldown = false;
+      api.setCameraEasing("easeLinear");
       api.addEventListener( 'viewerready', function() {
            if (clickview) {
              api.addEventListener(
@@ -29,6 +30,11 @@ function success( callback ) {
                    // get the camera position by clicking on the far left of screen
                    if (info.position2D[0] < 100) {
                      promtCameraPosition(api);
+                   }
+                   if (info.position2D[0] > 400) {
+                     playanimation = true;
+                     animationEvent()
+
                    }
                  }
              );
@@ -40,12 +46,12 @@ function success( callback ) {
   };
 
 function animationEvent() {
-  if(posIndex > currentEventList.length-1) {
+  if(posIndex > currentEventList.length-2) {
     posIndex=1;
   }
   var currentAnimation =  setTimeout(function() {
     animationEvent();
-  }, currentEventList[posIndex].duration * 300);
+  }, currentEventList[posIndex].duration * 1000);
   setCamera();
 }
 
@@ -54,7 +60,7 @@ function setCamera() {
     api.setCameraLookAt(
       currentEventList[posIndex].position,
       currentEventList[posIndex].target,
-      currentEventList[posIndex].duration  / 2
+      currentEventList[posIndex].duration
     );
     if (cooldown == false) {
       posIndex++;
@@ -83,9 +89,9 @@ client.init(uid, {
     ui_controls: 1,
     ui_vr: 0,
     ui_help: 0,
-    ui_setttings: 0,
+    ui_setttings:1,
     ui_stop: 0,
     watermark: 0,
     fullscreen: 1,
-    preload: 1
+    preload: 1,
 });
