@@ -1711,7 +1711,7 @@ var allModels = {
 
         "latexKnight": {
             "id":  "3fb3479b88f14c85b2a1baca5e0d3571",
-            "contact": "https://www.artstation.com/cai"
+            "contact": "https://www.artstation.com/cai", 
             "events": [
                     {
                         "event": "fadein",

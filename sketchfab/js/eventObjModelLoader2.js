@@ -6,7 +6,7 @@ var autom = false;
 var rewind = true;
 // Model
 //$("#api-frame").hide();
-var model = 'dec3adab600c4f1ba8dd0348f18203fe',
+var model = '66e3b17ca8d14671a69ac23a9915ee87',
 stopEvent = false,
 // API version
 version = '1.4.0',

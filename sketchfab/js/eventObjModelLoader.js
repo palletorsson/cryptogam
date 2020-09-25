@@ -2,11 +2,11 @@
 var easeIndex = 0;
 var eventIndex = 0;
 var cooldown = 0.1;
-var autom = false;
+var autom = true;
 var rewind = true;
 // Model
 //$("#api-frame").hide();
-var model = 'dec3adab600c4f1ba8dd0348f18203fe',
+var model = '66e3b17ca8d14671a69ac23a9915ee87',
 stopEvent = false,
 // API version
 version = '1.4.0',

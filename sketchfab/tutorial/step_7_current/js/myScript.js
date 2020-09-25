@@ -1,8 +1,8 @@
 var iframe = document.getElementById( 'api-frame' );
-  var model = allModels.models.bowsette;
+  var model = allModels.models.japanestemple;
 console.log(model);
 var uid = model.id;
-var version = '1.8.2';
+var version = '1.4.0';
 var client = new Sketchfab( iframe );
 var currentEventList = model.events
 var modelIndexCount = 0;
@@ -12,7 +12,7 @@ var isClicking = false;
 var cooldown = false;
 var isLoading = false;
 var iframeName = '';
-var playanimation = false;
+var playanimation = true;
 var clickview = true;
 
 function success( callback ) {
@@ -51,7 +51,7 @@ function animationEvent() {
   }
   var currentAnimation =  setTimeout(function() {
     animationEvent();
-  }, currentEventList[posIndex].duration * 1000);
+  }, currentEventList[posIndex].duration * 600);
   setCamera();
 }
 
@@ -69,7 +69,7 @@ function setCamera() {
     } else {
       setTimeout(function(){
         cooldown = false;
-      }, 1000);
+      }, 600);
     }
   }
 }
@@ -82,8 +82,13 @@ function promtCameraPosition() {
   });
 }
 
+error = function() {
+    console.error('Sketchfab API Error!');
+};
+
 client.init(uid, {
     success: success,
+    error: error,
     internal: 1,
     ui_infos: 0,
     ui_controls: 1,
@@ -93,5 +98,6 @@ client.init(uid, {
     ui_stop: 0,
     watermark: 0,
     fullscreen: 1,
-    preload: 1,
+
+
 });

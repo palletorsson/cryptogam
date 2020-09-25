@@ -9,9 +9,11 @@ export GOOGLE_APPLICATION_CREDENTIALS=gc.json
 
 from google.cloud import texttospeech
 import sys
-femalevoice = texttospeech.enums.SsmlVoiceGender.FEMALE
+c = texttospeech.enums.SsmlVoiceGender.FEMALE
 malevoice = texttospeech.enums.SsmlVoiceGender.MALE
 neutral = texttospeech.enums.SsmlVoiceGender.NEUTRAL
+
+unspecific = texttospeech.enums.SsmlVoiceGender.SSML_VOICE_GENDER_UNSPECIFIED
 
 # Instantiates a client
 client = texttospeech.TextToSpeechClient()
@@ -27,91 +29,99 @@ textlistemo = [
 textlist = [    #"---- part 1, starting at index 0 : Sketchfab",
 
                 "This video uses 3D models from Sketchfab.com.",
-                "Sketchfab is an open online marketplace for 3D models where anyone can publish.",
-                "The website hosts more than three million 3D models and claims to be the largest of its kind online.",
+                "SketchFab is an open online marketplace for 3D models, and anyone can publish there.",
+                "The site hosts more than three million 3D models and claims to be the largest of its kind in the online realm.",
                 "Spending two minutes with each model would take eleven years.",
-                "Like most media online the content is impossible to grasp.",
-                "Everything you perceive is a fraction.",
+                "Like most online media, the content is incalculable. ",
+                "Everything you have time to perceive is a mere fraction.",
+
 
                 #"---- part 2, starting at index 6: Categorization",
-                "All models are categorized: from animals and pets, characters and creatures, humans, to weapons and military.",
-                "You can navigate through staff selections, tags, user directories, and there is a search box.",
-                " ",
+                "All of the models are categorized: Animals and Pets, Characters and Creatures, People, Weapons and Military.",
+                "A search box helps users orient themselves among a massive number of 3D models, and also lists with staff picks and user collections. ",
+
                 #"---- part 2.2
-                "The categorization and taxonomy often fall into a binary narrative.",
-                "This is to get the expressed stereotypes across the vast amount of content.",
-                "'Spacegirl' has not been filed under people.",
+                "The taxonomy gravitates towards a heteronormative gaze and falls into a binary narrative. ",
+                "By highlighting the expressed stereotype, the models have a better chance of getting across in the vast amount of content. ", # changed
+                "'Spacegirl' is not filed under people.",
 
 
                 #"---- part 3, starting at index 11: Detailed view",
-                "From the generated lists, you can click on a detailed view for each 3D model.",
-                "It only takes a second to load.",
+                "When a 3D model has been selected, it takes a short time to load. ",
                 #"By hitting the f key you can go Fullscreen",
-                "You can spin and zoom the model from any point in the 3D space.",
-                "The revolving camera awakes a desire for even more angles.",
+                "You can spin the model in the 3D space and look at it from any angle.",
+                "The revolving camera awakes a desire for more.",
 
 
                 #"---- part 4, starting at index 20: Enter the model",
-                "The camera allows us to navigate through the surface mesh and enter the 3D model.",
+                "Our camera is allowed to pass through the surface and view the inside of the 3D model.", # changed
 
                 #"First creating a glitch effect between the outside and inside",
-                "The expected result is for the inside to be a solid dark place where no light can reach.",
-                "A place where the camera cannot see or show us anything.",
-                "However, the space is hollow.",
+                "Maybe one could expect darkness because no light reflects in a solid mass?",
+                # "A place where the camera cannot see or show us anything.", # remove?
+            
+                "However, the models are mostly hollow spaces.",
                 "The inverse geometry causes an instant of disorientation.",
-                "First to lose oneself without a point of reference.",
-                "Then to find a space that connects each model.",
+                "First, to lose oneself without a point of reference.", #changed
+                "Then to find a space that connects each 3D model.", #changed
 
                 #"---- part 5, starting at index 28: the reorientation",
-                "After the first moment of nausea, the models take us in new directions.",
+                "When the initial nausea has subsided, the models take us in new directions.",
 
-                "The visual fly-through forms a maze.",
+                "The visual fly-through forms a maze and the 3D models weave into each other. ", #changed !
                 # -- part 5_2
+
+
+                "In here, we can break away from outside stereotypes.",  # new !
 
                 "In a common space for queer reorientation.",
                 # - #"Where pop culture,, as an archeology of passed technology,  meet new technology to form new identities",
                 #"When it comes to Sketchfab, it is cliches that are formed around the market logic subscribing to a normative taxonomy.",
                 # in historical conditions as inhabit the same cross-section as
-                #  and resituated as turing graphics.
+                # and resituated as turing graphics.
                 "As we sort, what we see with our visual memory.",
                 "We are caught up in the same surreal cross-section of realism and its realization as the 3D models.",
-                "The general capacity of the models are feedback blocks for our vision.",
-                "Between 2D and 3D, excess and waste, speed and quality",
-                "a reorientation takes place where the surface of pop culture meets the depth of new technology.",
 
-                "On the inside of the maze, the models are connected to each other.",
-                "As the models attach to the lineage of open technology they become 3D creatures.",
-                "Like the cyborg, the 3D creature is linked to every creature that has ever existed.",
-                "A 3D creature embodies a unstable network of desires.",
+                "Between 2D and 3D, excess and waste, speed and quality.",
+                "The general capacity of the models is feedback blocks for our vision.", # changed
 
-                "On the outside, the 3D creatures are in a constant battle not to be fixed by their closest binary cliche. ",
+                "A reorientation takes place where the surface of pop culture meets the depth of new technology.", # change
+
+                "On the inside of the maze, the models connect.", # changed
+                "On the outside, they are in a constant battle not to be fixed by their closest binary cliche. ",
+
                 "Inside the maze, they are still safe.",
+
+                "The models attach to the lineage of open technology and become 3D creatures.",  # changed
+
+                "Like the cyborg, the 3D creature links to every creature that has ever existed.",  # changed
+                "A 3D creature embodies a unstable network of desires.", #?
+
                 ## 00:06:32
-                "As we follow the 3D models, a more ambiguous opportunity grows around us.",
+                "As we follow the 3D models, anthropomorphic opportunity grows around us.",
                 "It is a reorientation that embodies the surreal and queer quality of technology.",
                 #"A reorientation, emphasizing a new common algorithmic and digital reality.",
-                "This world is filled with revolutionary opportunities.",
+                "It is a world filled with revolutionary opportunities.",
                 ## 00:06:32
                 "We call from the depths of these surfaces.",
+                #"- We are queer; we are technology.",  
+
                 "- 3D creatures of the world wide web unite!",
                 "- You have nothing to lose but your chains!",
                 ### maybe part of 5 "The surface we see is rendered by the open format for 2D and 3D graphics called WebGL.",
 
                 ]
 
-
-
-
 # Build the voice request, select the language code ("en-US") and the ssml
 # voice gender ("neutral")
 voice = texttospeech.types.VoiceSelectionParams(
     language_code='en-US',
-    #name="en-US-Wavenet-F",
-    ssml_gender=femalevoice)
+    name="en-US-Wavenet-F",
+        ssml_gender=unspecific)
 
 # Select the type of audio file you want returned
 audio_config = texttospeech.types.AudioConfig(
-    audio_encoding=texttospeech.enums.AudioEncoding.MP3)
+    audio_encoding=texttospeech.enums.AudioEncoding.MP3, speaking_rate=0.9)
 
 # Perform the text-to-speech request on the text input with the selected
 # voice parameters and audio file type
